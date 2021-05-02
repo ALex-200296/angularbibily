@@ -1,0 +1,19 @@
+<div class="card card-primary">
+  <div class="card-header">
+    <h3 class="card-title">Добавить ресторан</h3>
+  </div>
+  <!-- /.card-header -->
+  <!-- form start -->
+  <form [formGroup]="form" >
+    <div class="card-body">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Название ресторана</label>
+        <input formControlName="name" type="text" class="form-control" placeholder="название ресторана">
+      </div>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer">
+      <button type="submit" class="btn btn-primary" (click)="create()">Добавить</button>
+    </div>
+  </form>
+</div>

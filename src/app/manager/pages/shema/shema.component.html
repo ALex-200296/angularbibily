@@ -1,0 +1,16 @@
+<section class="shema">
+  <h1 class="shema_title">Поляна</h1>
+  <div class="shema_wrap">
+    <ul class="shema_list">
+      <li  *ngFor="let table of tables" class="shema_item">
+        <h1 class="shema_title">
+          {{table.name}}
+          <span style="display: block; font-size: 14px; color: red;" *ngIf="table.exists">
+            Официант был добавлен ранее
+          </span>
+        </h1>
+        <app-tbody [usersAll]="users" [table]="table"></app-tbody>
+      </li>
+    </ul>
+  </div>
+</section>

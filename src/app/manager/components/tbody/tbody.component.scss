@@ -1,0 +1,39 @@
+.shema_form_group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group_btn {
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn:not(:first-child) {
+  margin-left: 5px;
+}
+
+select {
+  &.ng-invalid {
+    border: 1px solid red;
+  }
+
+  &.ng-valid {
+    border: 1px solid green;
+  }
+}
+
+@media (max-width: 768px) {
+  .shema_form_group {
+    flex-direction: column;
+  }
+
+  .group_btn {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

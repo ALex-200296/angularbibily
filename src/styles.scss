@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css');
+:root {
+  --color-white: #ffffff;
+  --color-grey: rgb(52, 56, 61);
+  --color-green: #24a763;
+}
+
+
+*{
+	font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+

@@ -1,0 +1,23 @@
+<section class="users">
+  <div class="manager_wrap">
+    <h1>Менеджеры</h1>
+    <ul class="manager_list">
+      <li class="manager-item" *ngFor="let manager of managers; index as i">
+        <h3>{{i+1}}: {{manager.name}}</h3>
+        <p>{{manager.login}}</p>
+      </li>
+    </ul>
+  </div>
+  <div class="employee_wrap">
+    <h1>Официанты</h1>
+    <ul class="employee_list">
+      <li class="employee-item" *ngFor="let employee of employees; index as i">
+        <h3>
+          {{i+1}}: {{employee.name}}
+          <small style="color: {{employee.color}}" class="employee_small">Color</small>
+        </h3>
+        <p>{{employee.login}}</p>
+      </li>
+    </ul>
+  </div>
+</section>

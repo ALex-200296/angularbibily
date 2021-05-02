@@ -1,0 +1,27 @@
+<div class="card card-primary">
+  <div class="card-header">
+    <h3 class="card-title">Добавить стол</h3>
+  </div>
+  <!-- /.card-header -->
+  <!-- form start -->
+  <form [formGroup]="form" >
+    <div class="card-body">
+      <div class="form-group">
+        <label for="exampleInputEmail1">номер стола</label>
+        <input formControlName="name" type="text" class="form-control" placeholder="номер стола">
+      </div>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-body">
+      <div class="form-group">
+        <label>Select</label>
+        <select  formControlName="restaurant_id" class="form-control">
+          <option *ngFor="let restaurant of restaurants" value="{{restaurant.id}}">{{restaurant.name}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn btn-primary" (click)="create()">Добавить</button>
+    </div>
+  </form>
+</div>

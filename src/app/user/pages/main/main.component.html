@@ -1,0 +1,4649 @@
+<app-header></app-header>
+<main class="main"
+>
+<h1 class="title1"  *ngIf="time">Дневная смена</h1>
+<section class="map_section" *ngIf="time">
+  <div class="map">
+    <svg viewBox="0 0 5376 4032">
+      <g>
+        <path
+        d="m 2486.623,278.56813 0.9758,201.48623 230.2699,-1.95144 -0.9757,-201.97409 z"
+        *ngIf="shemaDays.get('dп1')"
+        fill="white"
+      ></path>
+      <path
+      d="M 2509.5525,460.53995 2692.9879,298.57039"
+      id="dп1"
+      fill="white"
+      *ngIf="shemaDays.get('dп1')"
+      ></path>
+      <text style="font-size: 25px;"  *ngIf="shemaDays.get('dп1')">
+        <textPath  xlink:href="#dп1">{{shemaDays.get('dп1')}}</textPath>
+      </text>
+      </g>
+      <g>
+        <path
+          d="m 2729.3963,276.6653 0.6899,202.15195 223.5401,-1.37988 0.6899,-208.36139 z"
+          *ngIf="shemaDays.get('dп2')"
+          fill="white"
+        />
+        <path
+          d="M 2751.5311,464.44283 2938.8694,294.66751"
+          id="dп2"
+          fill="white"
+          *ngIf="shemaDays.get('dп2')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dп2')">
+          <textPath  xlink:href="#dп2">{{shemaDays.get('dп2')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 2961.5606,270.11088 -2.7598,207.67146 231.1294,-1.03491 10.0041,-211.81108 z"
+          *ngIf="shemaDays.get('dп3')"
+          fill="white"
+        />
+        <path
+          d="m 2979.8496,462.49139 199.0469,-173.6782"
+          id="dп3"
+          fill="white"
+          *ngIf="shemaDays.get('dп3')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dп3')">
+          <textPath  xlink:href="#dп3">{{shemaDays.get('dп3')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3210.9733,231.8193 -8.2792,277.35524 223.54,-3.44969 4.8296,-289.08419 z"
+          *ngIf="shemaDays.get('dп4')"
+          fill="white"
+        />
+        <path
+          d="M 3222.7023,498.13552 3414.5051,240.7885"
+          id="dп4"
+          fill="white"
+          *ngIf="shemaDays.get('dп4')"
+        />
+        <text style="font-size: 30px;"  *ngIf="shemaDays.get('dп4')">
+          <textPath  xlink:href="#dп4">{{shemaDays.get('dп4')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3438.653,219.40041 -2.0698,288.39425 263.5564,-2.06981 1.3799,-302.19302 z"
+          *ngIf="shemaDays.get('dп5')"
+          fill="white"
+        />
+        <path
+          d="M 3449.0021,498.82546 3687.7207,221.47023"
+          id="dп5"
+          fill="white"
+          *ngIf="shemaDays.get('dп5')"
+        />
+        <text style="font-size: 30px;"  *ngIf="shemaDays.get('dп5')">
+          <textPath  xlink:href="#dп5">{{shemaDays.get('dп5')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3825.0185,248.37782 -0.69,187.66325 240.0986,-2.06982 4.1396,-189.04312 z"
+          *ngIf="shemaDays.get('dд6')"
+          fill="white"
+        />
+        <path
+          d="M 3833.9877,428.45175 4050.6283,260.10678"
+          id="dд6"
+          fill="white"
+          *ngIf="shemaDays.get('dд6')"
+        />
+        <text style="font-size: 30px;"  *ngIf="shemaDays.get('dп6')">
+          <textPath  xlink:href="#dд6">{{shemaDays.get('dд6')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4075.4661,246.99795 -3.2977,185.73398 229.2943,-1.95144 -1.4636,-189.77759 z"
+          *ngIf="shemaDays.get('dд7')"
+          fill="white"
+        />
+        <path
+          d="M 4078.0228,427.36547 4287.3147,255.6387"
+          id="dд7"
+          fill="white"
+          *ngIf="shemaDays.get('dд7')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dд7')">
+          <textPath  xlink:href="#dд7">{{shemaDays.get('dд7')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3823.3598,442.00127 240.0271,-1.95144 0.4879,149.2852 -236.6122,-0.48786"
+          *ngIf="shemaDays.get('dд4')"
+          fill="white"
+        />
+        <path
+          d="M 3836.532,582.99284 4053.1419,447.85559"
+          id="dд4"
+          fill="white"
+          *ngIf="shemaDays.get('dд4')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dд4')">
+          <textPath  xlink:href="#dд4">{{shemaDays.get('dд4')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4071.1927,439.07411 3.9029,151.23664 h 225.3914 l -0.9758,-151.23664 z"
+          *ngIf="shemaDays.get('dд5')"
+          fill="white"
+        />
+        <path
+          d="M 4081.9256,586.89573 4287.3147,454.19777"
+          id="dд5"
+          fill="white"
+          *ngIf="shemaDays.get('dд5')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dд5')">
+          <textPath  xlink:href="#dд5">{{shemaDays.get('dд5')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4376.1053,307.35188 -0.9757,226.85495 307.8397,-1.46358 V 308.3276 Z"
+          *ngIf="shemaDays.get('dп6')"
+          fill="white"
+        />
+        <path
+          d="M 4387.8139,520.05889 4661.9913,334.67204"
+          id="dп6"
+          fill="white"
+          *ngIf="shemaDays.get('dп6')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dп6')">
+          <textPath  xlink:href="#dп6">{{shemaDays.get('dп6')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4697.6051,510.78955 -3.9029,335.1599 454.1978,-4.8786 -7.3179,-334.18418 z"
+          *ngIf="shemaDays.get('dvip')"
+          fill="white"
+        />
+        <path
+          d="M 4708.338,830.33793 5124.9706,533.23111"
+          id="dvip"
+          fill="white"
+          *ngIf="shemaDays.get('dvip')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dvip')">
+          <textPath  xlink:href="#dvip">{{shemaDays.get('dvip')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4393.1828,835.86037 -2.4148,216.98563 295.9835,-3.4497 -0.3449,-205.94661 z"
+          *ngIf="shemaDays.get('dп7')"
+          fill="white"
+        />
+        <path
+          d="M 4399.3922,1044.5667 4671.2279,862.423"
+          id="dп7"
+          fill="white"
+          *ngIf="shemaDays.get('dп7')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dп7')">
+          <textPath  xlink:href="#dп7">{{shemaDays.get('dп7')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 2398.9158,877.60164 -1.3799,280.80496 184.2136,-1.3799 V 872.77208 Z"
+          *ngIf="shemaDays.get('dс1')"
+          fill="white"
+        />
+        <path
+          d="M 2405.8152,1152.1971 2574.8501,885.19097"
+          id="dс1"
+          fill="white"
+          *ngIf="shemaDays.get('dс1')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dс1')">
+          <textPath  xlink:href="#dс1">{{shemaDays.get('dс1')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 2590.7187,874.84189 -0.6899,282.18481 h 167.655 V 868.63244 Z"
+          *ngIf="shemaDays.get('dс2')"
+          fill="white"
+        />
+        <path
+          d="M 2605.2074,1148.7474 2752.8542,878.29158"
+          id="dс2"
+          fill="white"
+          *ngIf="shemaDays.get('dс2')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dс2')">
+          <textPath  xlink:href="#dс2">{{shemaDays.get('dс2')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 2768.7228,867.94251 v 289.77409 h 168.345 V 864.49281 Z"
+          *ngIf="shemaDays.get('dс3')"
+          fill="white"
+        />
+        <path
+          d="M 2781.1417,1148.7474 2929.4784,874.84189"
+          id="dс3"
+          fill="white"
+          *ngIf="shemaDays.get('dс3')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dс3')">
+          <textPath  xlink:href="#dс3">{{shemaDays.get('dс3')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3041.2485,596.10678 v 259.41684 h 202.1519 V 596.10678 Z"
+          *ngIf="shemaDays.get('dс4')"
+          fill="white"
+        />
+        <path
+          d="M 3050.9076,847.93429 3235.1212,605.07598"
+          id="dс4"
+          fill="white"
+          *ngIf="shemaDays.get('dс4')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dс4')">
+          <textPath  xlink:href="#dс4">{{shemaDays.get('dс4')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3273.7577,594.7269 v 264.24641 h 182.1437 V 594.7269 Z"
+          *ngIf="shemaDays.get('dс5')"
+          fill="white"
+        />
+        <path
+          d="m 3290.3162,847.24435 143.5072,-240.7885"
+          id="dс5"
+          fill="white"
+          *ngIf="shemaDays.get('dс5')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dс5')">
+          <textPath  xlink:href="#dс5">{{shemaDays.get('dс5')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3478.6694,595.41684 v 260.79671 h 190.423 V 594.7269 h -189.0431 z"
+          *ngIf="shemaDays.get('dс6')"
+          fill="white"
+        />
+        <path
+          d="M 3488.3285,847.24435 3658.7433,609.21561"
+          id="dс6"
+          fill="white"
+          *ngIf="shemaDays.get('dс6')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dс6')">
+          <textPath  xlink:href="#dс6">{{shemaDays.get('dс6')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 3075.7454,934.17659 V 1189.4538 H 3247.54 V 935.55647 Z"
+          *ngIf="shemaDays.get('dю71')"
+          fill="white"
+        />
+        <path
+          d="M 3093.6838,1177.7248 3237.8809,943.14579"
+          id="dю71"
+          fill="white"
+          *ngIf="shemaDays.get('dю71')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю71')">
+          <textPath  xlink:href="#dю71">{{shemaDays.get('dю71')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3259.269,935.55647 h 191.1129 V 1187.384 h -186.9733 z"
+          *ngIf="shemaDays.get('dю72')"
+          fill="white"
+        />
+        <path
+          d="M 3274.4476,1181.1745 3441.4127,949.35524"
+          id="dю72"
+          fill="white"
+          *ngIf="shemaDays.get('dю72')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю72')">
+          <textPath  xlink:href="#dю72">{{shemaDays.get('dю72')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3461.421,932.79672 v 255.27718 h 181.4537 V 932.79672 Z"
+          *ngIf="shemaDays.get('dю73')"
+          fill="white"
+        />
+        <path
+          d="M 3479.3593,1177.7248 3627.0062,949.35524"
+          id="dю73"
+          fill="white"
+          *ngIf="shemaDays.get('dю73')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю73')">
+          <textPath  xlink:href="#dю73">{{shemaDays.get('dю73')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 3779.9402,931.81283 V 1189.403 h 185.3869 V 922.05563 h -189.2898 z"
+          *ngIf="shemaDays.get('dю74')"
+          fill="white"
+        />
+        <path
+          d="M 3800.4303,1176.7186 3948.7398,942.54575"
+          id="dю74"
+          fill="white"
+          *ngIf="shemaDays.get('dю74')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю74')">
+          <textPath  xlink:href="#dю74">{{shemaDays.get('dю74')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3978.0114,922.05563 v 269.29877 h 171.7268 V 921.07991 Z"
+          *ngIf="shemaDays.get('dю75')"
+          fill="white"
+        />
+        <path
+          d="M 4002.4044,1176.7186 4136.0781,943.52147"
+          id="dю75"
+          fill="white"
+          *ngIf="shemaDays.get('dю75')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю75')">
+          <textPath  xlink:href="#dю75">{{shemaDays.get('dю75')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4162.4226,920.10419 v 270.27451 h 168.7996 V 912.29843 Z"
+          *ngIf="shemaDays.get('dю76')"
+          fill="white"
+        />
+        <path
+          d="M 4183.8884,1175.7429 4313.6592,938.64287"
+          id="dю76"
+          fill="white"
+          *ngIf="shemaDays.get('dю76')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю76')">
+          <textPath  xlink:href="#dю76">{{shemaDays.get('dю76')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3071.6058,1203.2526 h 180.7638 v 249.7577 h -184.9035 z"
+          *ngIf="shemaDays.get('dю61')"
+          fill="white"
+        />
+        <path
+          d="m 3078.5051,1440.5914 151.7865,-215.2608"
+          id="dю61"
+          fill="white"
+          *ngIf="shemaDays.get('dю61')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю61')">
+          <textPath  xlink:href="#dю61">{{shemaDays.get('dю61')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3273.0678,1206.0123 h 168.3449 v 244.2382 h -168.3449 z"
+          *ngIf="shemaDays.get('dю62')"
+          fill="white"
+        />
+        <path
+          d="M 3289.6263,1439.2115 3416.575,1229.4702"
+          id="dю62"
+          fill="white"
+          *ngIf="shemaDays.get('dю62')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю62')">
+          <textPath  xlink:href="#dю62">{{shemaDays.get('dю62')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3459.3511,1208.7721 v 242.8583 h 187.6633 v -244.2382 z"
+          *ngIf="shemaDays.get('dю63')"
+          fill="white"
+        />
+        <path
+          d="M 3484.1889,1436.4517 3618.037,1225.3306"
+          id="dю63"
+          fill="white"
+          *ngIf="shemaDays.get('dю63')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю63')">
+          <textPath  xlink:href="#dю63">{{shemaDays.get('dю63')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3053.6674,1595.1376 h 191.8028 v 259.4168 h -197.3224 z"
+          *ngIf="shemaDays.get('dю51')"
+          fill="white"
+        />
+        <path
+          d="m 3097.8234,1833.8563 110.3902,-190.423"
+          id="dю51"
+          fill="white"
+          *ngIf="shemaDays.get('dю51')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю51')">
+          <textPath  xlink:href="#dю51">{{shemaDays.get('dю51')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3263.4086,1589.6181 v 259.4168 h 176.6243 v -262.1766 z"
+          *ngIf="shemaDays.get('dю52')"
+          fill="white"
+        />
+        <path
+          d="m 3285.4867,1835.2361 129.7084,-219.4004"
+          id="dю52"
+          fill="white"
+          *ngIf="shemaDays.get('dю52')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю52')">
+          <textPath  xlink:href="#dю52">{{shemaDays.get('dю52')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3457.9713,1585.4784 v 273.2156 h 153.1663 v -280.1149 z"
+          *ngIf="shemaDays.get('dю53')"
+          fill="white"
+        />
+        <path
+          d="m 3466.2505,1829.7166 126.9487,-218.0205"
+          id="dю53"
+          fill="white"
+          *ngIf="shemaDays.get('dю53')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю53')">
+          <textPath  xlink:href="#dю53">{{shemaDays.get('dю53')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3783.6222,1203.2526 v 249.7577 h 184.9035 v -245.6181 z"
+          *ngIf="shemaDays.get('dю64')"
+          fill="white"
+        />
+        <path
+          d="m 3808.46,1422.653 126.9486,-194.5626"
+          id="dю64"
+          fill="white"
+          *ngIf="shemaDays.get('dю64')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю64')">
+          <textPath  xlink:href="#dю64">{{shemaDays.get('dю64')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3989.2238,1207.3922 v 245.6181 h 165.5852 v -246.998 z"
+          *ngIf="shemaDays.get('dю65')"
+          fill="white"
+        />
+        <path
+          d="m 3996.1232,1440.5914 140.7474,-212.501"
+          id="dю65"
+          fill="white"
+          *ngIf="shemaDays.get('dю65')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю65')">
+          <textPath  xlink:href="#dю65">{{shemaDays.get('dю65')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4176.8871,1211.5318 v 241.4785 h 175.2443 v -246.998 z"
+          *ngIf="shemaDays.get('dю66')"
+          fill="white"
+        />
+        <path
+          d="m 4203.1047,1441.9713 125.5688,-208.3614"
+          id="dю66"
+          fill="white"
+          *ngIf="shemaDays.get('dю66')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю66')">
+          <textPath  xlink:href="#dю66">{{shemaDays.get('dю66')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3769.8234,1597.8973 v 258.037 h 176.6242 v -259.4168 z"
+          *ngIf="shemaDays.get('dю54')"
+          fill="white"
+        />
+        <path
+          d="m 3796.0411,1821.4374 128.3285,-189.0431"
+          id="dю54"
+          fill="white"
+          *ngIf="shemaDays.get('dю54')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю54')">
+          <textPath  xlink:href="#dю54">{{shemaDays.get('dю54')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3978.1848,1597.8973 v 260.7967 h 166.9651 v -266.3162 z"
+          *ngIf="shemaDays.get('dю55')"
+          fill="white"
+        />
+        <path
+          d="m 3990.6037,1843.5154 128.3285,-222.1602"
+          id="dю55"
+          fill="white"
+          *ngIf="shemaDays.get('dю55')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю55')">
+          <textPath  xlink:href="#dю55">{{shemaDays.get('dю55')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4385.2485,1234.9897 v 240.0986 h 248.3778 v -244.2382 z"
+          *ngIf="shemaDays.get('dб35')"
+          fill="white"
+        />
+        <path
+          d="m 4412.846,1457.1499 194.5626,-198.7023"
+          id="dб35"
+          fill="white"
+          *ngIf="shemaDays.get('dб35')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб35')">
+          <textPath  xlink:href="#dб35">{{shemaDays.get('dб35')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4646.0452,1240.5092 v 242.8584 h 219.4004 V 1232.23 Z"
+          *ngIf="shemaDays.get('dб36')"
+          fill="white"
+        />
+        <path
+          d="m 4677.7823,1473.7084 155.9261,-209.7413"
+          id="dб36"
+          fill="white"
+          *ngIf="shemaDays.get('dб36')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб36')">
+          <textPath  xlink:href="#dб36">{{shemaDays.get('dб36')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4893.0431,1363.3183 v 252.5174 h 245.6181 v -255.2772 z"
+          *ngIf="shemaDays.get('dб37')"
+          fill="white"
+        />
+        <path
+          d="m 4906.8419,1602.037 191.8029,-202.8419"
+          id="dб37"
+          fill="white"
+          *ngIf="shemaDays.get('dб37')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб37')">
+          <textPath  xlink:href="#dб37">{{shemaDays.get('dб37')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4897.1828,1644.8131 v 215.2608 h 230.4394 v -230.4394 z"
+          *ngIf="shemaDays.get('dб38')"
+          fill="white"
+        />
+        <path
+          d="m 4919.2608,1843.5154 182.1437,-183.5236"
+          id="dб38"
+          fill="white"
+          *ngIf="shemaDays.get('dб38')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб38')">
+          <textPath  xlink:href="#dб38">{{shemaDays.get('dб38')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3049.5277,1873.8727 h 182.1438 v 230.4394 h -178.0041 z"
+          *ngIf="shemaDays.get('dю41')"
+          fill="white"
+        />
+        <path
+          d="M 3085.4045,2084.9938 3215.1129,1893.191"
+          id="dю41"
+          fill="white"
+          *ngIf="shemaDays.get('dю41')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю41')">
+          <textPath  xlink:href="#dю41">{{shemaDays.get('dю41')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3248.23,1875.2526 h 169.7248 v 227.6796 h -176.6242 z"
+          *ngIf="shemaDays.get('dю42')"
+          fill="white"
+        />
+        <path
+          d="m 3267.5483,2082.2341 124.1889,-175.2444"
+          id="dю42"
+          fill="white"
+          *ngIf="shemaDays.get('dю42')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю42')">
+          <textPath  xlink:href="#dю42">{{shemaDays.get('dю42')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3441.4127,1869.7331 h 164.2054 v 235.9589 h -169.7249 z"
+          *ngIf="shemaDays.get('dю43')"
+          fill="white"
+        />
+        <path
+          d="m 3451.0719,2089.1335 120.0493,-198.7023"
+          id="dю43"
+          fill="white"
+          *ngIf="shemaDays.get('dю43')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю43')">
+          <textPath  xlink:href="#dю43">{{shemaDays.get('dю43')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3066.0862,2294.7351 h 189.0432 v 235.9589 h -198.7023 z"
+          *ngIf="shemaDays.get('dю31')"
+          fill="white"
+        />
+        <path
+          d="M 3092.3039,2503.0965 3226.152,2333.3717"
+          id="dю31"
+          fill="white"
+          *ngIf="shemaDays.get('dю31')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю31')">
+          <textPath  xlink:href="#dю31">{{shemaDays.get('dю31')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3274.4476,2297.4949 v 237.3388 H 3427.614 V 2285.076 Z"
+          *ngIf="shemaDays.get('dю32')"
+          fill="white"
+        />
+        <path
+          d="m 3293.7659,2511.3758 118.6694,-198.7023"
+          id="dю32"
+          fill="white"
+          *ngIf="shemaDays.get('dю32')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю32')">
+          <textPath  xlink:href="#dю32">{{shemaDays.get('dю32')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3451.0719,2285.076 v 245.618 h 158.6858 v -248.3778 z"
+          *ngIf="shemaDays.get('dю33')"
+          fill="white"
+        />
+        <path
+          d="m 3470.3901,2514.1355 125.5688,-202.8419"
+          id="dю33"
+          fill="white"
+          *ngIf="shemaDays.get('dю33')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю33')">
+          <textPath  xlink:href="#dю33">{{shemaDays.get('dю33')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3778.1027,1875.2526 h 169.7248 v 238.7187 h -180.7638 l -4.1397,-237.3389 z"
+          *ngIf="shemaDays.get('dю44')"
+          fill="white"
+        />
+        <path
+          d="M 3780.8624,2104.3121 3917.4702,1893.191"
+          id="dю44"
+          fill="white"
+          *ngIf="shemaDays.get('dю44')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю44')">
+          <textPath  xlink:href="#dю44">{{shemaDays.get('dю44')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3965.7659,1871.1129 h 165.5852 v 245.6181 h -155.926 z"
+          *ngIf="shemaDays.get('dю45')"
+          fill="white"
+        />
+        <path
+          d="m 3998.883,2091.8932 103.4907,-193.1827"
+          id="dю45"
+          fill="white"
+          *ngIf="shemaDays.get('dю45')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю45')">
+          <textPath  xlink:href="#dю45">{{shemaDays.get('dю45')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3758.7844,2300.2546 v 240.0986 h 194.5626 v -248.3778 z"
+          *ngIf="shemaDays.get('dю34')"
+          fill="white"
+        />
+        <path
+          d="m 3797.4209,2518.2752 131.0883,-182.1438"
+          id="dю34"
+          fill="white"
+          *ngIf="shemaDays.get('dю34')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю34')">
+          <textPath  xlink:href="#dю34">{{shemaDays.get('dю34')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3971.2854,2294.7351 v 244.2382 h 171.1047 v -248.3778 z"
+          *ngIf="shemaDays.get('dю35')"
+          fill="white"
+        />
+        <path
+          d="m 3994.7433,2523.7947 99.3512,-179.384"
+          id="dю35"
+          fill="white"
+          *ngIf="shemaDays.get('dю35')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю35')">
+          <textPath  xlink:href="#dю35">{{shemaDays.get('dю35')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4160.3285,2293.3552 v 252.5175 h 200.0822 v -258.037 z"
+          *ngIf="shemaDays.get('dю36')"
+          fill="white"
+        />
+        <path
+          d="m 4178.2669,2526.5544 151.7865,-190.423"
+          id="dю36"
+          fill="white"
+          *ngIf="shemaDays.get('dю36')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю36')">
+          <textPath  xlink:href="#dю36">{{shemaDays.get('dю36')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 4393.5277,1865.5934 V 2127.77 h 251.1376 v -256.6571 z"
+          *ngIf="shemaDays.get('dб34')"
+          fill="white"
+        />
+        <path
+          d="m 4416.9856,2104.3121 198.7023,-190.423"
+          id="dб34"
+          fill="white"
+          *ngIf="shemaDays.get('dб34')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб34')">
+          <textPath  xlink:href="#dб34">{{shemaDays.get('dб34')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4665.3635,1869.7331 v 251.1375 h 216.6406 v -251.1375 z"
+          *ngIf="shemaDays.get('dб33')"
+          fill="white"
+        />
+        <path
+          d="m 4686.0616,2091.8932 166.9651,-189.0431"
+          id="dб33"
+          fill="white"
+          *ngIf="shemaDays.get('dб33')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб33')">
+          <textPath  xlink:href="#dб33">{{shemaDays.get('dб33')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4407.3265,2167.7864 h 238.7187 v 256.6571 h -227.6797 z"
+          *ngIf="shemaDays.get('dб31')"
+          fill="white"
+        />
+        <path
+          d="m 4447.3429,2405.1253 179.384,-202.8419"
+          id="dб31"
+          fill="white"
+          *ngIf="shemaDays.get('dб31')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб31')">
+          <textPath  xlink:href="#dб31">{{shemaDays.get('dб31')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4662.6037,2170.5462 v 249.7577 h 241.4784 v -248.3778 z"
+          *ngIf="shemaDays.get('dб32')"
+          fill="white"
+        />
+        <path
+          d="m 4684.6817,2413.4045 184.9035,-197.3224"
+          id="dб32"
+          fill="white"
+          *ngIf="shemaDays.get('dб32')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб32')">
+          <textPath  xlink:href="#dб32">{{shemaDays.get('dб32')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 2880.3262,2769.094 h 185.3868 v -243.93 h -179.5325 z"
+          *ngIf="shemaDays.get('dю21')"
+          fill="white"
+        />
+        <path
+          d="m 2929.1122,2739.8224 117.0864,-173.6782"
+          id="dю21"
+          fill="white"
+          *ngIf="shemaDays.get('dю21')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю21')">
+          <textPath  xlink:href="#dю21">{{shemaDays.get('dю21')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3087.1788,2765.1912 h 152.2124 V 2538.8241 H 3083.276 Z"
+          *ngIf="shemaDays.get('dю22')"
+          fill="white"
+        />
+        <path
+          d="m 3122.3048,2732.0167 105.3778,-167.8239"
+          id="dю22"
+          fill="white"
+          *ngIf="shemaDays.get('dю22')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю22')">
+          <textPath  xlink:href="#dю22">{{shemaDays.get('dю22')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3268.6628,2769.094 h 161.9696 v -228.3185 h -175.6297 z"
+          *ngIf="shemaDays.get('dю23')"
+          fill="white"
+        />
+        <path
+          d="m 3294.0315,2747.6282 122.9408,-165.8724"
+          id="dю23"
+          fill="white"
+          *ngIf="shemaDays.get('dю23')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю23')">
+          <textPath  xlink:href="#dю23">{{shemaDays.get('dю23')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3446.2439,2554.4356 h 169.7753 v 240.0272 H 3442.341 Z"
+          *ngIf="shemaDays.get('dю24')"
+          fill="white"
+        />
+        <path
+          d="m 3477.4669,2767.1426 120.9893,-173.6782"
+          id="dю24"
+          fill="white"
+          *ngIf="shemaDays.get('dю24')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю24')">
+          <textPath  xlink:href="#dю24">{{shemaDays.get('dю24')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 2888.1319,2845.2002 c 21.4659,0 161.9696,0 161.9696,0 v 281.0075 h -175.6297 z"
+          *ngIf="shemaDays.get('dю11')"
+          fill="white"
+        />
+        <path
+          d="m 2897.8891,3093.0332 126.8436,-200.9984"
+          id="dю11"
+          fill="white"
+          *ngIf="shemaDays.get('dю11')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю11')">
+          <textPath  xlink:href="#dю11">{{shemaDays.get('dю11')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 3075.4702,2837.3945 H 3229.634 V 3114.499 H 3067.6644 Z"
+          *ngIf="shemaDays.get('dю12')"
+          fill="white"
+        />
+        <path
+          d="m 3098.8875,3083.276 119.0379,-218.5614"
+          id="dю12"
+          fill="white"
+          *ngIf="shemaDays.get('dю12')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю12')">
+          <textPath  xlink:href="#dю12">{{shemaDays.get('dю12')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3253.0513,2845.2002 h 165.8724 v 281.0075 h -169.7753 z"
+          *ngIf="shemaDays.get('dю13')"
+          fill="white"
+        />
+        <path
+          d="m 3292.0801,3093.0332 103.4263,-204.9013"
+          id="dю13"
+          fill="white"
+          *ngIf="shemaDays.get('dю13')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю13')">
+          <textPath  xlink:href="#dю13">{{shemaDays.get('dю13')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3446.2439,2851.0545 h 163.921 v 267.3474 h -169.7753 z"
+          *ngIf="shemaDays.get('dю14')"
+          fill="white"
+        />
+        <path
+          d="M 3457.9525,3089.1303 3588.699,2870.5689"
+          id="dю14"
+          fill="white"
+          *ngIf="shemaDays.get('dю14')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю14')">
+          <textPath  xlink:href="#dю14">{{shemaDays.get('dю14')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3766.2801,2782.7541 h 177.5811 v -236.1243 h -177.5811 z"
+          *ngIf="shemaDays.get('dю25')"
+          fill="white"
+        />
+        <path
+          d="m 3795.5517,2761.2883 122.9408,-181.484"
+          id="dю25"
+          fill="white"
+          *ngIf="shemaDays.get('dю25')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю25')">
+          <textPath  xlink:href="#dю25">{{shemaDays.get('dю25')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3971.1814,2784.7056 h 179.5325 v -234.1729 h -177.5811 z"
+          *ngIf="shemaDays.get('dю26')"
+          fill="white"
+        />
+        <path
+          d="m 4019.9674,2761.2883 109.2807,-177.5811"
+          id="dю26"
+          fill="white"
+          *ngIf="shemaDays.get('dю26')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю26')">
+          <textPath  xlink:href="#dю26">{{shemaDays.get('dю26')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4170.2283,2784.7056 h 161.9696 V 2550.5327 H 4164.374 Z"
+          *ngIf="shemaDays.get('dю27')"
+          fill="white"
+        />
+        <path
+          d="m 4187.7913,2765.1912 97.572,-171.7268"
+          id="dю27"
+          fill="white"
+          *ngIf="shemaDays.get('dю27')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю27')">
+          <textPath  xlink:href="#dю27">{{shemaDays.get('dю27')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3787.746,2854.9574 h 171.7267 v 259.5416 h -165.8724 z"
+          *ngIf="shemaDays.get('dю15')"
+          fill="white"
+        />
+        <path
+          d="m 3813.1147,3094.9846 126.8436,-179.5325"
+          id="dю15"
+          fill="white"
+          *ngIf="shemaDays.get('dю15')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю15')">
+          <textPath  xlink:href="#dю15">{{shemaDays.get('dю15')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3988.7443,2858.8603 h 183.4355 v 241.9786 h -191.2412 z"
+          *ngIf="shemaDays.get('dю16')"
+          fill="white"
+        />
+        <path
+          d="m 4008.2587,3081.3245 126.8437,-171.7267"
+          id="dю16"
+          fill="white"
+          *ngIf="shemaDays.get('dю16')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю16')">
+          <textPath  xlink:href="#dю16">{{shemaDays.get('dю16')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4201.4514,2872.5204 h 171.7267 v 245.8815 h -175.6296 z"
+          *ngIf="shemaDays.get('dю17')"
+          fill="white"
+        />
+        <path
+          d="m 4242.4316,3085.2274 105.3778,-163.921"
+          id="dю17"
+          fill="white"
+          *ngIf="shemaDays.get('dю17')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю17')">
+          <textPath  xlink:href="#dю17">{{shemaDays.get('dю17')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4392.6925,2870.5689 h 160.0181 v 241.9787 h -165.8724 z"
+          *ngIf="shemaDays.get('dю18')"
+          fill="white"
+        />
+        <path
+          d="m 4433.6728,3079.3731 c 0,-7.8058 81.9605,-165.8725 81.9605,-165.8725"
+          id="dю18"
+          fill="white"
+          *ngIf="shemaDays.get('dю18')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю18')">
+          <textPath  xlink:href="#dю18">{{shemaDays.get('dю18')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4589.788,2870.5689 h 173.6782 v 247.833 h -183.4354 z"
+          *ngIf="shemaDays.get('dю19')"
+          fill="white"
+        />
+        <path
+          d="m 4621.0111,3102.7904 111.2321,-181.484"
+          id="dю19"
+          fill="white"
+          *ngIf="shemaDays.get('dю19')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dю19')">
+          <textPath  xlink:href="#dю19">{{shemaDays.get('dю19')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3422.8266,3155.4793 h 271.2502 v 273.2016 h -273.2016 z"
+          *ngIf="shemaDays.get('dб43')"
+          fill="white"
+        />
+        <path
+          d="m 3463.8069,3407.2151 189.2897,-202.9498"
+          id="dб43"
+          fill="white"
+          *ngIf="shemaDays.get('dб43')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб43')">
+          <textPath  xlink:href="#dб43">{{shemaDays.get('dб43')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3742.8628,3167.1879 h 286.8618 v 251.7358 H 3752.62 Z"
+          *ngIf="shemaDays.get('dб44')"
+          fill="white"
+        />
+        <path
+          d="m 3797.5032,3395.5064 208.8041,-181.4839"
+          id="dб44"
+          fill="white"
+          *ngIf="shemaDays.get('dб44')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб44')">
+          <textPath  xlink:href="#dб44">{{shemaDays.get('dб44')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4060.9476,3161.3336 h 300.5219 v 259.5416 h -300.5219 z"
+          *ngIf="shemaDays.get('dб47')"
+          fill="white"
+        />
+        <path
+          d="m 4109.7337,3381.8464 c 7.8057,-3.9029 218.5613,-169.7754 218.5613,-169.7754"
+          id="dб47"
+          fill="white"
+          *ngIf="shemaDays.get('dб47')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб47')">
+          <textPath  xlink:href="#dб47">{{shemaDays.get('dб47')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3418.9237,3674.5624 h 312.2305 v -236.1243 h -312.2305 z"
+          *ngIf="shemaDays.get('dб42')"
+          fill="white"
+        />
+        <path
+          d="m 3459.904,3635.5336 230.27,-152.2123"
+          id="dб42"
+          fill="white"
+          *ngIf="shemaDays.get('dб42')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб42')">
+          <textPath  xlink:href="#dб42">{{shemaDays.get('dб42')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3768.2316,3432.5838 h 267.3473 v 249.7844 h -275.1531 z"
+          *ngIf="shemaDays.get('dб45')"
+          fill="white"
+        />
+        <path
+          d="m 3805.3089,3658.9509 197.0955,-181.484"
+          id="dб45"
+          fill="white"
+          *ngIf="shemaDays.get('dб45')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб45')">
+          <textPath  xlink:href="#dб45">{{shemaDays.get('dб45')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4070.7048,3438.4381 h 282.9589 v 282.9589 h -281.0074 z"
+          *ngIf="shemaDays.get('dб48')"
+          fill="white"
+        />
+        <path
+          d="m 4096.0736,3690.174 216.6099,-206.8527"
+          id="dб48"
+          fill="white"
+          *ngIf="shemaDays.get('dб48')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб48')">
+          <textPath  xlink:href="#dб48">{{shemaDays.get('dб48')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3438.4381,3945.8127 h 302.4733 V 3690.174 h -312.2305 z"
+          *ngIf="shemaDays.get('dб41')"
+          fill="white"
+        />
+        <path
+          d="m 3465.7583,3920.4439 230.27,-183.4354"
+          id="dб41"
+          fill="white"
+          *ngIf="shemaDays.get('dб41')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб41')">
+          <textPath  xlink:href="#dб41">{{shemaDays.get('dб41')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 3760.4258,3945.8127 h 296.619 v -247.833 h -282.9589 z"
+          *ngIf="shemaDays.get('dб46')"
+          fill="white"
+        />
+        <path
+          d="m 3793.6003,3900.9295 212.707,-154.1638"
+          id="dб46"
+          fill="white"
+          *ngIf="shemaDays.get('dб46')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб46')">
+          <textPath  xlink:href="#dб46">{{shemaDays.get('dб46')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 735.69306,3134.0134 h 286.86174 v 249.7844 H 731.79018 Z"
+          *ngIf="shemaDays.get('dб24')"
+          fill="white"
+        />
+        <path
+          d="M 774.72187,3366.2348 1003.0404,3180.848"
+          id="dб24"
+          fill="white"
+          *ngIf="shemaDays.get('dб24')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб24')">
+          <textPath  xlink:href="#dб24">{{shemaDays.get('dб24')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1059.6322,3374.0406 h 288.8132 v -255.6387 h -286.8618 z"
+          *ngIf="shemaDays.get('dб25')"
+          fill="white"
+        />
+        <path
+          d="m 1108.4182,3335.0118 200.9984,-179.5325"
+          id="dб25"
+          fill="white"
+          *ngIf="shemaDays.get('dб25')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб25')">
+          <textPath  xlink:href="#dб25">{{shemaDays.get('dб25')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1061.5836,3395.5064 h 284.9103 v 230.27 h -281.0074 z"
+          *ngIf="shemaDays.get('dб26')"
+          fill="white"
+        />
+        <path
+          d="m 1104.5153,3590.6505 202.9498,-158.0667"
+          id="dб26"
+          fill="white"
+          *ngIf="shemaDays.get('dб26')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб26')">
+          <textPath  xlink:href="#dб26">{{shemaDays.get('dб26')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 735.69306,3637.4851 H 1008.8947 V 3395.5064 H 739.59594 Z"
+          *ngIf="shemaDays.get('dб23')"
+          fill="white"
+        />
+        <path
+          d="M 782.52763,3614.0678 981.57456,3454.0497"
+          id="dб23"
+          fill="white"
+          *ngIf="shemaDays.get('dб23')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб23')">
+          <textPath  xlink:href="#dб23">{{shemaDays.get('dб23')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 731.79018,3895.0752 H 1022.5548 V 3645.2908 H 735.69306 Z"
+          *ngIf="shemaDays.get('dб22')"
+          fill="white"
+        />
+        <path
+          d="M 788.38195,3861.9007 1003.0404,3692.1254"
+          id="dб22"
+          fill="white"
+          *ngIf="shemaDays.get('dб22')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб22')">
+          <textPath  xlink:href="#dб22">{{shemaDays.get('dб22')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1063.5351,3653.0966 h 273.2016 v 234.1728 h -273.2016 z"
+          *ngIf="shemaDays.get('dб21')"
+          fill="white"
+        />
+        <path
+          d="m 1090.8552,3854.095 222.4642,-167.8239"
+          id="dб21"
+          fill="white"
+          *ngIf="shemaDays.get('dб21')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб21')">
+          <textPath  xlink:href="#dб21">{{shemaDays.get('dб21')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 4697.6051,510.78955 -3.9029,335.1599 454.1978,-4.8786 -7.3179,-334.18418 z"
+          *ngIf="shemaDays.get('dvip')"
+          fill="white"
+        />
+        <path
+          d="M 4708.338,830.33793 5124.9706,533.23111"
+          id="dvip"
+          fill="white"
+          *ngIf="shemaDays.get('dvip')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dvip')">
+          <textPath  xlink:href="#dvip">{{shemaDays.get('dvip')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 388.33666,2833.4916 h 191.24116 v 290.7646 H 388.33666 Z"
+          *ngIf="shemaDays.get('d19')"
+          fill="white"
+        />
+        <path
+          d="M 439.07411,3093.0332 569.82062,2876.4233"
+          id="d19"
+          fill="white"
+          *ngIf="shemaDays.get('d19')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d19')">
+          <textPath  xlink:href="#d19">{{shemaDays.get('d19')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 610.80087,2835.443 h 167.82388 v 286.8618 h -173.6782 l 3.90288,-279.056 z"
+          *ngIf="shemaDays.get('d18')"
+          fill="white"
+        />
+        <path
+          d="M 632.26672,3081.3245 768.86755,2892.0348"
+          id="d18"
+          fill="white"
+          *ngIf="shemaDays.get('d18')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d18')">
+          <textPath  xlink:href="#d18">{{shemaDays.get('d18')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 807.89636,2839.3459 h 204.90124 v 263.4445 H 803.99348 Z"
+          *ngIf="shemaDays.get('d17')"
+          fill="white"
+        />
+        <path
+          d="M 831.31365,3075.4702 985.47744,2892.0348"
+          id="d17"
+          fill="white"
+          *ngIf="shemaDays.get('d17')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d17')">
+          <textPath  xlink:href="#d17">{{shemaDays.get('d17')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 1030.3606,2829.5887 H 1196.233 V 3114.499 H 1020.6034 Z"
+          *ngIf="shemaDays.get('d16')"
+          fill="white"
+        />
+        <path
+          d="m 1059.6322,3079.3731 103.4263,-206.8527"
+          id="d16"
+          fill="white"
+          *ngIf="shemaDays.get('d16')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d16')">
+          <textPath  xlink:href="#d16">{{shemaDays.get('d16')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1223.5532,2854.9574 h 181.4839 v 249.7844 h -183.4354 v -238.0757 z"
+          *ngIf="shemaDays.get('d15')"
+          fill="white"
+        />
+        <path
+          d="m 1252.8248,3077.4216 120.9893,-173.6782"
+          id="d15"
+          fill="white"
+          *ngIf="shemaDays.get('d15')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d15')">
+          <textPath  xlink:href="#d15">{{shemaDays.get('d15')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 811.79924,2542.7269 c 7.80576,3.9029 204.90126,0 204.90126,0 v 241.9787 H 802.04204 Z"
+          *ngIf="shemaDays.get('d27')"
+          fill="white"
+        />
+        <path
+          d="M 839.11941,2755.434 1001.089,2560.2899"
+          id="d27"
+          fill="white"
+          *ngIf="shemaDays.get('d27')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d27')">
+          <textPath  xlink:href="#d27">{{shemaDays.get('d27')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1045.9721,2544.6784 h 158.0667 v 249.7844 h -173.6782 z"
+          *ngIf="shemaDays.get('d26')"
+          fill="white"
+        />
+        <path
+          d="m 1075.2437,2755.434 87.8148,-163.921"
+          id="d26"
+          fill="white"
+          *ngIf="shemaDays.get('d26')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d26')">
+          <textPath  xlink:href="#d26">{{shemaDays.get('d26')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1241.1161,2542.7269 h 150.261 v 243.9301 h -171.7268 z"
+          *ngIf="shemaDays.get('d25')"
+          fill="white"
+        />
+        <path
+          d="m 1262.582,2743.7253 87.8148,-156.1152"
+          id="d25"
+          fill="white"
+          *ngIf="shemaDays.get('d25')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d25')">
+          <textPath  xlink:href="#d25">{{shemaDays.get('d25')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1578.7153,2546.6298 h 175.6297 v 218.5614 h -177.5811 z"
+          *ngIf="shemaDays.get('d24')"
+          fill="white"
+        />
+        <path
+          d="m 1611.8898,2737.871 115.135,-165.8724"
+          id="d24"
+          fill="white"
+          *ngIf="shemaDays.get('d24')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d24')">
+          <textPath  xlink:href="#d24">{{shemaDays.get('d24')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1779.7137,2542.7269 h 152.2124 v 226.3671 l -154.1638,-3.9028 5.8543,-206.8527 z"
+          *ngIf="shemaDays.get('d23')"
+          fill="white"
+        />
+        <path
+          d="m 1820.694,2753.4825 95.6206,-185.3868"
+          id="d23"
+          fill="white"
+          *ngIf="shemaDays.get('d23')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d23')">
+          <textPath  xlink:href="#d23">{{shemaDays.get('d23')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1969.0034,2544.6784 142.4552,1.9514 v 232.2214 h -148.3095 z"
+          *ngIf="shemaDays.get('d22')"
+          fill="white"
+        />
+        <path
+          d="m 1990.4693,2747.6282 89.7663,-165.8724"
+          id="d22"
+          fill="white"
+          *ngIf="shemaDays.get('d22')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d22')">
+          <textPath  xlink:href="#d22">{{shemaDays.get('d22')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 2152.4389,2546.6298 h 156.1152 v 224.4157 h -152.2124 z"
+          *ngIf="shemaDays.get('d21')"
+          fill="white"
+        />
+        <path
+          d="m 2183.6619,2745.6768 87.8148,-154.1638"
+          id="d21"
+          fill="white"
+          *ngIf="shemaDays.get('d21')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d21')">
+          <textPath  xlink:href="#d21">{{shemaDays.get('d21')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1592.3754,2864.7146 h 161.9696 v 232.2214 c 0,0 -165.8724,0 -167.8239,0 -1.9514,0 5.8543,-232.2214 5.8543,-232.2214 z"
+          *ngIf="shemaDays.get('d14')"
+          fill="white"
+        />
+        <path
+          d="m 1611.8898,3081.3245 c 3.872,0 33.6734,-47.5371 62.727,-95.4502 29.517,-48.6772 58.2623,-97.7424 58.2623,-97.7424"
+          id="d14"
+          fill="white"
+          *ngIf="shemaDays.get('d14')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d14')">
+          <textPath  xlink:href="#d14">{{shemaDays.get('d14')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1773.8594,2860.8117 h 158.0667 v 234.1729 h -154.1638 z"
+          *ngIf="shemaDays.get('d13')"
+          fill="white"
+        />
+        <path
+          d="m 1803.131,3079.3731 105.3778,-187.3383"
+          id="d13"
+          fill="white"
+          *ngIf="shemaDays.get('d13')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d13')">
+          <textPath  xlink:href="#d13">{{shemaDays.get('d13')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1959.2462,2858.8603 h 161.9696 v 261.493 l -171.7268,-1.9514 z"
+          *ngIf="shemaDays.get('d12')"
+          fill="white"
+        />
+        <path
+          d="m 1978.7606,3091.0817 113.1836,-193.1926"
+          id="d12"
+          fill="white"
+          *ngIf="shemaDays.get('d12')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d12')">
+          <textPath  xlink:href="#d12">{{shemaDays.get('d12')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 2142.6816,2866.6661 h 167.8239 v 247.8329 h -165.8724 z"
+          *ngIf="shemaDays.get('d11')"
+          fill="white"
+        />
+        <path
+          d="m 2168.0504,3091.0817 105.3778,-187.3383"
+          id="d11"
+          fill="white"
+          *ngIf="shemaDays.get('d11')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d11')">
+          <textPath  xlink:href="#d11">{{shemaDays.get('d11')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 243.93006,1910.4602 v 273.2017 H 493.71444 V 1918.266 Z"
+          *ngIf="shemaDays.get('dб13')"
+          fill="white"
+        />
+        <path
+          d="m 281.00743,2154.3903 173.6782,-193.1926"
+          id="dб13"
+          fill="white"
+          *ngIf="shemaDays.get('dб13')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб13')">
+          <textPath  xlink:href="#dб13">{{shemaDays.get('dб13')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 222.46421,2232.4479 h 267.34735 v 251.7358 c 0,0 -275.15311,3.9029 -275.15311,0 0,-3.9028 7.80576,-251.7358 7.80576,-251.7358 z"
+          *ngIf="shemaDays.get('dб12')"
+          fill="white"
+        />
+        <path
+          d="M 247.83294,2445.1549 466.39428,2279.2825"
+          id="dб12"
+          fill="white"
+          *ngIf="shemaDays.get('dб12')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб12')">
+          <textPath  xlink:href="#dб12">{{shemaDays.get('dб12')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 519.08317,2226.5936 h 265.3959 v 253.6873 H 507.37453 Z"
+          *ngIf="shemaDays.get('dб11')"
+          fill="white"
+        />
+        <path
+          d="M 565.91774,2433.4463 751.30459,2257.8166"
+          id="dб11"
+          fill="white"
+          *ngIf="shemaDays.get('dб11')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб11')">
+          <textPath  xlink:href="#dб11">{{shemaDays.get('dб11')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 835.21653,1865.5771 h 167.82387 v 228.3185 H 815.70212 Z"
+          *ngIf="shemaDays.get('d46')"
+          fill="white"
+        />
+        <path
+          d="M 848.87661,2070.4784 1008.8947,1890.9458"
+          id="d46"
+          fill="white"
+          *ngIf="shemaDays.get('d46')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d46')">
+          <textPath  xlink:href="#d46">{{shemaDays.get('d46')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1042.0692,1863.6257 h 161.9696 v 232.2214 h -173.6782 z"
+          *ngIf="shemaDays.get('d45')"
+          fill="white"
+        />
+        <path
+          d="m 1057.6807,2070.4784 140.5038,-173.6783"
+          id="d45"
+          fill="white"
+          *ngIf="shemaDays.get('d45')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d45')">
+          <textPath  xlink:href="#d45">{{shemaDays.get('d45')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1231.3589,1869.48 h 158.0667 v 230.27 h -161.9695 z"
+          *ngIf="shemaDays.get('d44')"
+          fill="white"
+        />
+        <path
+          d="M 1252.8248,2070.4784 1360.154,1898.7516"
+          id="d44"
+          fill="white"
+          *ngIf="shemaDays.get('d44')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d44')">
+          <textPath  xlink:href="#d44">{{shemaDays.get('d44')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 839.11941,2296.8454 h 154.1638 v 241.9787 H 837.16797 Z"
+          *ngIf="shemaDays.get('d36')"
+          fill="white"
+        />
+        <path
+          d="M 874.24534,2509.5525 973.7688,2333.9228"
+          id="d36"
+          fill="white"
+          *ngIf="shemaDays.get('d36')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d36')">
+          <textPath  xlink:href="#d36">{{shemaDays.get('d36')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1028.4091,2298.7969 h 173.6782 v 226.3671 h -175.6296 z"
+          *ngIf="shemaDays.get('d35')"
+          fill="white"
+        />
+        <path
+          d="m 1057.6807,2503.6981 120.9894,-171.7267"
+          id="d35"
+          fill="white"
+          *ngIf="shemaDays.get('d35')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d35')">
+          <textPath  xlink:href="#d35">{{shemaDays.get('d35')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1223.5532,2304.6512 h 173.6782 v 214.6585 h -173.6782 z"
+          *ngIf="shemaDays.get('d34')"
+          fill="white"
+        />
+        <path
+          d="m 1262.582,2497.8438 113.1835,-160.0181"
+          id="d34"
+          fill="white"
+          *ngIf="shemaDays.get('d34')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d34')">
+          <textPath  xlink:href="#d34">{{shemaDays.get('d34')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1576.7639,1871.4314 h 179.5325 v 238.0758 h -177.5811 z"
+          *ngIf="shemaDays.get('d43')"
+          fill="white"
+        />
+        <path
+          d="m 1615.7927,2078.2841 109.2807,-171.7267"
+          id="d43"
+          fill="white"
+          *ngIf="shemaDays.get('d43')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d43')">
+          <textPath  xlink:href="#d43">{{shemaDays.get('d43')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1781.6652,1869.48 h 154.1638 v 247.8329 h -163.921 z"
+          *ngIf="shemaDays.get('d42')"
+          fill="white"
+        />
+        <path
+          d="M 1812.8882,2088.0413 1935.829,1904.6059"
+          id="d42"
+          fill="white"
+          *ngIf="shemaDays.get('d42')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d42')">
+          <textPath  xlink:href="#d42">{{shemaDays.get('d42')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1961.1977,1867.5285 h 146.358 v 249.7844 H 1949.489 Z"
+          *ngIf="shemaDays.get('d41')"
+          fill="white"
+        />
+        <path
+          d="m 1986.5664,2103.6528 99.5235,-202.9498"
+          id="d41"
+          fill="white"
+          *ngIf="shemaDays.get('d41')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d41')">
+          <textPath  xlink:href="#d41">{{shemaDays.get('d41')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1565.0553,2287.0882 h 189.2897 v 226.3671 h -173.6782 z"
+          *ngIf="shemaDays.get('d33')"
+          fill="white"
+        />
+        <path
+          d="m 1607.987,2480.2809 115.1349,-152.2124"
+          id="d33"
+          fill="white"
+          *ngIf="shemaDays.get('d33')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d33')">
+          <textPath  xlink:href="#d33">{{shemaDays.get('d33')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1777.7623,2296.8454 h 161.9695 v 224.4157 h -156.1152 z"
+          *ngIf="shemaDays.get('d32')"
+          fill="white"
+        />
+        <path
+          d="m 1803.131,2501.7467 105.3778,-175.6296"
+          id="d32"
+          fill="white"
+          *ngIf="shemaDays.get('d32')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d32')">
+          <textPath  xlink:href="#d32">{{shemaDays.get('d32')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1959.2462,2298.7969 h 156.1153 v 222.4642 h -160.0181 z"
+          *ngIf="shemaDays.get('d31')"
+          fill="white"
+        />
+        <path
+          d="m 1988.5179,2488.0866 93.6691,-154.1638"
+          id="d31"
+          fill="white"
+          *ngIf="shemaDays.get('d31')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d31')">
+          <textPath  xlink:href="#d31">{{shemaDays.get('d31')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 228.31854,1215.7474 h 269.29878 v 265.3959 H 224.41566 Z"
+          *ngIf="shemaDays.get('dб15')"
+          fill="white"
+        />
+        <path
+          d="M 273.20167,1455.7746 478.10292,1246.9705"
+          id="dб15"
+          fill="white"
+          *ngIf="shemaDays.get('dб15')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб15')">
+          <textPath  xlink:href="#dб15">{{shemaDays.get('dб15')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 524.93749,1217.6989 h 271.25023 v 290.7646 H 522.98605 Z"
+          *ngIf="shemaDays.get('dб16')"
+          fill="white"
+        />
+        <path
+          d="M 563.9663,1475.289 761.06179,1264.5334"
+          id="dб16"
+          fill="white"
+          *ngIf="shemaDays.get('dб16')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб16')">
+          <textPath  xlink:href="#dб16">{{shemaDays.get('dб16')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 224.41566,1512.3664 h 253.68726 v 306.3761 H 224.41566 Z"
+          *ngIf="shemaDays.get('dб14')"
+          fill="white"
+        />
+        <path
+          d="M 255.6387,1791.4224 458.58851,1549.4437"
+          id="dб14"
+          fill="white"
+          *ngIf="shemaDays.get('dб14')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб14')">
+          <textPath  xlink:href="#dб14">{{shemaDays.get('dб14')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 530.79181,1543.5894 H 800.0906 v 261.493 H 522.98605 Z"
+          *ngIf="shemaDays.get('dб17')"
+          fill="white"
+        />
+        <path
+          d="M 558.11198,1771.908 763.01323,1574.8125"
+          id="dб17"
+          fill="white"
+          *ngIf="shemaDays.get('dб17')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dб17')">
+          <textPath  xlink:href="#dб17">{{shemaDays.get('dб17')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 817.65356,1182.5729 h 173.6782 v 249.7844 H 819.605 Z"
+          *ngIf="shemaDays.get('d66')"
+          fill="white"
+        />
+        <path
+          d="M 837.16797,1397.2314 965.96304,1221.6017"
+          id="d66"
+          fill="white"
+          *ngIf="shemaDays.get('d66')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d66')">
+          <textPath  xlink:href="#d66">{{shemaDays.get('d66')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1032.312,1190.3787 h 161.9696 v 234.1729 h -167.8239 z"
+          *ngIf="shemaDays.get('d65')"
+          fill="white"
+        />
+        <path
+          d="m 1063.5351,1408.94 113.1835,-193.1926"
+          id="d65"
+          fill="white"
+          *ngIf="shemaDays.get('d65')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d65')">
+          <textPath  xlink:href="#d65">{{shemaDays.get('d65')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1219.6503,1190.3787 h 181.484 v 234.1729 h -183.4354 z"
+          *ngIf="shemaDays.get('d64')"
+          fill="white"
+        />
+        <path
+          d="M 1243.0676,1397.2314 1377.717,1211.8445"
+          id="d64"
+          fill="white"
+          *ngIf="shemaDays.get('d64')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d64')">
+          <textPath  xlink:href="#d64">{{shemaDays.get('d64')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 831.31365,1611.8898 h 167.82388 v 232.2215 H 829.3622 Z"
+          *ngIf="shemaDays.get('d56')"
+          fill="white"
+        />
+        <path
+          d="M 854.73093,1816.7911 977.67168,1641.1614"
+          id="d56"
+          fill="white"
+          *ngIf="shemaDays.get('d56')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d56')">
+          <textPath  xlink:href="#d56">{{shemaDays.get('d56')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1034.2635,1619.6956 h 173.6782 v 226.3671 H 1032.312 Z"
+          *ngIf="shemaDays.get('d55')"
+          fill="white"
+        />
+        <path
+          d="m 1067.4379,1828.4997 107.3293,-169.7753"
+          id="d55"
+          fill="white"
+          *ngIf="shemaDays.get('d55')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d55')">
+          <textPath  xlink:href="#d55">{{shemaDays.get('d55')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1233.3104,1613.8413 h 169.7753 v 230.27 h -173.6782 z"
+          *ngIf="shemaDays.get('d54')"
+          fill="white"
+        />
+        <path
+          d="m 1262.582,1834.3541 101.4749,-173.6782"
+          id="d54"
+          fill="white"
+          *ngIf="shemaDays.get('d54')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d54')">
+          <textPath  xlink:href="#d54">{{shemaDays.get('d54')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1580.6668,1194.2816 h 167.8239 v 238.0757 h -173.6782 z"
+          *ngIf="shemaDays.get('d63')"
+          fill="white"
+        />
+        <path
+          d="m 1606.0355,1418.6972 113.1836,-197.0955"
+          id="d63"
+          fill="white"
+          *ngIf="shemaDays.get('d63')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d63')">
+          <textPath  xlink:href="#d63">{{shemaDays.get('d63')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1777.7623,1200.1359 h 156.1152 v 230.27 H 1785.568 Z"
+          *ngIf="shemaDays.get('d62')"
+          fill="white"
+        />
+        <path
+          d="m 1805.0824,1414.7943 103.4264,-181.4839"
+          id="d62"
+          fill="white"
+          *ngIf="shemaDays.get('d62')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d62')">
+          <textPath  xlink:href="#d62">{{shemaDays.get('d62')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1963.1491,1194.2816 h 148.3095 v 243.93 h -156.1152 z"
+          *ngIf="shemaDays.get('d61')"
+          fill="white"
+        />
+        <path
+          d="m 1980.7121,1422.6001 105.3778,-202.9498"
+          id="d61"
+          fill="white"
+          *ngIf="shemaDays.get('d61')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d61')">
+          <textPath  xlink:href="#d61">{{shemaDays.get('d61')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1582.6182,1627.5014 h 179.5326 v 228.3185 h -173.6782 z"
+          *ngIf="shemaDays.get('d53')"
+          fill="white"
+        />
+        <path
+          d="m 1613.8413,1840.2084 115.135,-179.5325"
+          id="d53"
+          fill="white"
+          *ngIf="shemaDays.get('d53')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d53')">
+          <textPath  xlink:href="#d53">{{shemaDays.get('d53')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1783.6166,1625.5499 h 169.7753 v 226.3671 h -171.7267 z"
+          *ngIf="shemaDays.get('d52')"
+          fill="white"
+        />
+        <path
+          d="m 1794.8374,1843.6234 139.528,-202.9498"
+          id="d52"
+          fill="white"
+          *ngIf="shemaDays.get('d52')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d52')">
+          <textPath  xlink:href="#d52">{{shemaDays.get('d52')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1976.8092,1621.647 h 132.698 v 247.833 h -148.3095 z"
+          *ngIf="shemaDays.get('d51')"
+          fill="white"
+        />
+        <path
+          d="m 1984.1271,1851.4292 110.7443,-207.3406"
+          id="d51"
+          fill="white"
+          *ngIf="shemaDays.get('d51')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d51')">
+          <textPath  xlink:href="#d51">{{shemaDays.get('d51')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1955.2854,939.6961 h 186.2834 v 230.4394 H 1948.386 Z"
+          *ngIf="shemaDays.get('d71')"
+          fill="white"
+        />
+        <path
+          d="M 1974.6037,1154.9569 2111.2115,981.0924"
+          id="d71"
+          fill="white"
+          *ngIf="shemaDays.get('d71')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d71')">
+          <textPath  xlink:href="#d71">{{shemaDays.get('d71')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1770.3819,934.17659 h 161.4456 v 238.71871 h -161.4456 z"
+          *ngIf="shemaDays.get('d72')"
+          fill="white"
+        />
+        <path
+          d="M 1789.7002,1149.4374 1916.6489,963.15401"
+          id="d72"
+          fill="white"
+          *ngIf="shemaDays.get('d72')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d72')">
+          <textPath  xlink:href="#d72">{{shemaDays.get('d72')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1581.3388,936.93635 h 162.8255 v 245.61805 h -164.2054 z"
+          *ngIf="shemaDays.get('d73')"
+          fill="white"
+        />
+        <path
+          d="M 1607.5565,1161.8563 1724.846,964.53388"
+          id="d73"
+          fill="white"
+          *ngIf="shemaDays.get('d73')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d73')">
+          <textPath  xlink:href="#d73">{{shemaDays.get('d73')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1233.6099,934.17659 h 171.1047 V 1174.2752 H 1221.191 Z"
+          *ngIf="shemaDays.get('d74')"
+          fill="white"
+        />
+        <path
+          d="M 1252.9281,1157.7166 1384.0164,964.53388"
+          id="d74"
+          fill="white"
+          *ngIf="shemaDays.get('d74')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d74')">
+          <textPath  xlink:href="#d74">{{shemaDays.get('d74')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="m 1029.3881,939.6961 c 8.2793,0 168.345,0 168.345,0 v 237.3388 h -171.1048 z"
+          *ngIf="shemaDays.get('d75')"
+          fill="white"
+        />
+        <path
+          d="M 1058.3655,1150.8172 1175.655,974.19302"
+          id="d75"
+          fill="white"
+          *ngIf="shemaDays.get('d75')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d75')">
+          <textPath  xlink:href="#d75">{{shemaDays.get('d75')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 1008.6899,941.07598 H 837.58522 v 220.78032 h 168.34498 z"
+          *ngIf="shemaDays.get('d76')"
+          fill="white"
+        />
+        <path
+          d="M 858.28337,1142.538 982.47228,976.95277"
+          id="d76"
+          fill="white"
+          *ngIf="shemaDays.get('d76')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('d76')">
+          <textPath  xlink:href="#d76">{{shemaDays.get('d76')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 596.10678,637.50308 H 764.45175 V 847.24435 H 586.44764 l 6.89938,-204.22176 z"
+          *ngIf="shemaDays.get('dк1')"
+          fill="white"
+        />
+        <path
+          d="m 614.04518,840.34497 c 0,-8.27926 128.32854,-173.86448 128.32854,-173.86448"
+          id="dк1"
+          fill="white"
+          *ngIf="shemaDays.get('dк1')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dк1')">
+          <textPath  xlink:href="#dк1">{{shemaDays.get('dк1')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 409.82341,636.1232 H 575.40862 V 861.04312 H 400.16427 Z"
+          *ngIf="shemaDays.get('dк2')"
+          fill="white"
+        />
+        <path
+          d="M 431.90144,845.86448 558.8501,659.58111"
+          id="dк2"
+          fill="white"
+          *ngIf="shemaDays.get('dк2')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dк2')">
+          <textPath  xlink:href="#dк2">{{shemaDays.get('dк2')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 216.64066,636.1232 H 379.46612 V 861.04312 H 208.3614 Z"
+          *ngIf="shemaDays.get('dк3')"
+          fill="white"
+        />
+        <path
+          d="M 244.23819,836.20534 362.9076,665.10062"
+          id="dк3"
+          fill="white"
+          *ngIf="shemaDays.get('dк3')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dк3')">
+          <textPath  xlink:href="#dк3">{{shemaDays.get('dк3')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 223.54004,386.3655 H 376.70637 V 619.56468 H 213.8809 Z"
+          *ngIf="shemaDays.get('dк4')"
+          fill="white"
+        />
+        <path
+          d="M 235.95893,603.00616 354.62834,427.76181"
+          id="dк4"
+          fill="white"
+          *ngIf="shemaDays.get('dк4')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dк4')">
+          <textPath  xlink:href="#dк4">{{shemaDays.get('dк4')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 407.06366,382.22587 H 574.02875 V 620.94456 H 408.44353 Z"
+          *ngIf="shemaDays.get('dк5')"
+          fill="white"
+        />
+        <path
+          d="M 429.14168,607.14579 554.71047,418.10267"
+          id="dк5"
+          fill="white"
+          *ngIf="shemaDays.get('dк5')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dк5')">
+          <textPath  xlink:href="#dк5">{{shemaDays.get('dк5')}}</textPath>
+        </text>
+      </g>
+      <g>
+        <path
+          d="M 609.90554,386.3655 H 768.59138 V 619.56468 H 604.38604 Z"
+          *ngIf="shemaDays.get('dк6')"
+          fill="white"
+        />
+        <path
+          d="M 623.70431,594.7269 743.75359,416.72279"
+          id="dк6"
+          fill="white"
+          *ngIf="shemaDays.get('dк6')"
+        />
+        <text style="font-size: 25px;"  *ngIf="shemaDays.get('dк6')">
+          <textPath  xlink:href="#dк6">{{shemaDays.get('dк6')}}</textPath>
+        </text>
+      </g>
+    </svg>
+    <img class="map_img1" src="assets/img/pol.png" alt="pol">
+    <img class="map_img" src="assets/img/pol.png" alt="pol">
+   </div>
+</section>
+  <section class="list_section" *ngIf="time">
+    <ul class="list">
+      <li class="item" *ngFor="let day of days">
+        <h5 class="table text-info">{{day.table}}</h5>
+        <h5 class="user" [ngStyle]="{color: day.color}">{{day.user}}</h5>
+      </li>
+      <img class="item_img" src="assets/img/color.png" alt="img">
+    </ul>
+  </section>
+  <h1 class="title1" *ngIf="!time">Ночная смена</h1>
+  <section class="map_section" *ngIf="!time">
+    <div class="map">
+      <svg viewBox="0 0 5376 4032">
+        <g>
+          <path
+          d="m 2486.623,278.56813 0.9758,201.48623 230.2699,-1.95144 -0.9757,-201.97409 z"
+          *ngIf="shemaNight.get('nп1')"
+          fill="white"
+        ></path>
+        <path
+        d="M 2509.5525,460.53995 2692.9879,298.57039"
+        id="nп1"
+        fill="white"
+        *ngIf="shemaNight.get('nп1')"
+        ></path>
+        <text style="font-size: 25px;"  *ngIf="shemaNight.get('nп1')">
+          <textPath  xlink:href="#nп1">{{shemaNight.get('nп1')}}</textPath>
+        </text>
+        </g>
+        <g>
+          <path
+            d="m 2729.3963,276.6653 0.6899,202.15195 223.5401,-1.37988 0.6899,-208.36139 z"
+            *ngIf="shemaNight.get('nп2')"
+            fill="white"
+          />
+          <path
+            d="M 2751.5311,464.44283 2938.8694,294.66751"
+            id="nп2"
+            fill="white"
+            *ngIf="shemaNight.get('nп2')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nп2')">
+            <textPath  xlink:href="#nп2">{{shemaNight.get('nп2')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 2961.5606,270.11088 -2.7598,207.67146 231.1294,-1.03491 10.0041,-211.81108 z"
+            *ngIf="shemaNight.get('nп3')"
+            fill="white"
+          />
+          <path
+            d="m 2979.8496,462.49139 199.0469,-173.6782"
+            id="nп3"
+            fill="white"
+            *ngIf="shemaNight.get('nп3')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nп3')">
+            <textPath  xlink:href="#nп3">{{shemaNight.get('nп3')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3210.9733,231.8193 -8.2792,277.35524 223.54,-3.44969 4.8296,-289.08419 z"
+            *ngIf="shemaNight.get('nп4')"
+            fill="white"
+          />
+          <path
+            d="M 3222.7023,498.13552 3414.5051,240.7885"
+            id="nп4"
+            fill="white"
+            *ngIf="shemaNight.get('nп4')"
+          />
+          <text style="font-size: 30px;"  *ngIf="shemaNight.get('nп4')">
+            <textPath  xlink:href="#nп4">{{shemaNight.get('nп4')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3438.653,219.40041 -2.0698,288.39425 263.5564,-2.06981 1.3799,-302.19302 z"
+            *ngIf="shemaNight.get('nп5')"
+            fill="white"
+          />
+          <path
+            d="M 3449.0021,498.82546 3687.7207,221.47023"
+            id="nп5"
+            fill="white"
+            *ngIf="shemaNight.get('nп5')"
+          />
+          <text style="font-size: 30px;"  *ngIf="shemaNight.get('nп5')">
+            <textPath  xlink:href="#nп5">{{shemaNight.get('nп5')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3825.0185,248.37782 -0.69,187.66325 240.0986,-2.06982 4.1396,-189.04312 z"
+            *ngIf="shemaNight.get('nд6')"
+            fill="white"
+          />
+          <path
+            d="M 3833.9877,428.45175 4050.6283,260.10678"
+            id="nд6"
+            fill="white"
+            *ngIf="shemaNight.get('nд6')"
+          />
+          <text style="font-size: 30px;"  *ngIf="shemaNight.get('nп6')">
+            <textPath  xlink:href="#nд6">{{shemaNight.get('nд6')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4075.4661,246.99795 -3.2977,185.73398 229.2943,-1.95144 -1.4636,-189.77759 z"
+            *ngIf="shemaNight.get('nд7')"
+            fill="white"
+          />
+          <path
+            d="M 4078.0228,427.36547 4287.3147,255.6387"
+            id="nд7"
+            fill="white"
+            *ngIf="shemaNight.get('nд7')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nд7')">
+            <textPath  xlink:href="#nд7">{{shemaNight.get('nд7')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3823.3598,442.00127 240.0271,-1.95144 0.4879,149.2852 -236.6122,-0.48786"
+            *ngIf="shemaNight.get('nд4')"
+            fill="white"
+          />
+          <path
+            d="M 3836.532,582.99284 4053.1419,447.85559"
+            id="nд4"
+            fill="white"
+            *ngIf="shemaNight.get('nд4')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nд4')">
+            <textPath  xlink:href="#nд4">{{shemaNight.get('nд4')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4071.1927,439.07411 3.9029,151.23664 h 225.3914 l -0.9758,-151.23664 z"
+            *ngIf="shemaNight.get('nд5')"
+            fill="white"
+          />
+          <path
+            d="M 4081.9256,586.89573 4287.3147,454.19777"
+            id="nд5"
+            fill="white"
+            *ngIf="shemaNight.get('nд5')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nд5')">
+            <textPath  xlink:href="#nд5">{{shemaNight.get('nд5')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4376.1053,307.35188 -0.9757,226.85495 307.8397,-1.46358 V 308.3276 Z"
+            *ngIf="shemaNight.get('nп6')"
+            fill="white"
+          />
+          <path
+            d="M 4387.8139,520.05889 4661.9913,334.67204"
+            id="nп6"
+            fill="white"
+            *ngIf="shemaNight.get('nп6')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nп6')">
+            <textPath  xlink:href="#nп6">{{shemaNight.get('nп6')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4697.6051,510.78955 -3.9029,335.1599 454.1978,-4.8786 -7.3179,-334.18418 z"
+            *ngIf="shemaNight.get('nvip')"
+            fill="white"
+          />
+          <path
+            d="M 4708.338,830.33793 5124.9706,533.23111"
+            id="nvip"
+            fill="white"
+            *ngIf="shemaNight.get('nvip')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nvip')">
+            <textPath  xlink:href="#nvip">{{shemaNight.get('nvip')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4393.1828,835.86037 -2.4148,216.98563 295.9835,-3.4497 -0.3449,-205.94661 z"
+            *ngIf="shemaNight.get('nп7')"
+            fill="white"
+          />
+          <path
+            d="M 4399.3922,1044.5667 4671.2279,862.423"
+            id="nп7"
+            fill="white"
+            *ngIf="shemaNight.get('nп7')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nп7')">
+            <textPath  xlink:href="#nп7">{{shemaNight.get('nп7')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 2398.9158,877.60164 -1.3799,280.80496 184.2136,-1.3799 V 872.77208 Z"
+            *ngIf="shemaNight.get('nс1')"
+            fill="white"
+          />
+          <path
+            d="M 2405.8152,1152.1971 2574.8501,885.19097"
+            id="nс1"
+            fill="white"
+            *ngIf="shemaNight.get('nс1')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nс1')">
+            <textPath  xlink:href="#nс1">{{shemaNight.get('nс1')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 2590.7187,874.84189 -0.6899,282.18481 h 167.655 V 868.63244 Z"
+            *ngIf="shemaNight.get('nс2')"
+            fill="white"
+          />
+          <path
+            d="M 2605.2074,1148.7474 2752.8542,878.29158"
+            id="nс2"
+            fill="white"
+            *ngIf="shemaNight.get('nс2')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nс2')">
+            <textPath  xlink:href="#nс2">{{shemaNight.get('nс2')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 2768.7228,867.94251 v 289.77409 h 168.345 V 864.49281 Z"
+            *ngIf="shemaNight.get('nс3')"
+            fill="white"
+          />
+          <path
+            d="M 2781.1417,1148.7474 2929.4784,874.84189"
+            id="nс3"
+            fill="white"
+            *ngIf="shemaNight.get('nс3')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nс3')">
+            <textPath  xlink:href="#nс3">{{shemaNight.get('nс3')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3041.2485,596.10678 v 259.41684 h 202.1519 V 596.10678 Z"
+            *ngIf="shemaNight.get('nс4')"
+            fill="white"
+          />
+          <path
+            d="M 3050.9076,847.93429 3235.1212,605.07598"
+            id="nс4"
+            fill="white"
+            *ngIf="shemaNight.get('nс4')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nс4')">
+            <textPath  xlink:href="#nс4">{{shemaNight.get('nс4')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3273.7577,594.7269 v 264.24641 h 182.1437 V 594.7269 Z"
+            *ngIf="shemaNight.get('nс5')"
+            fill="white"
+          />
+          <path
+            d="m 3290.3162,847.24435 143.5072,-240.7885"
+            id="nс5"
+            fill="white"
+            *ngIf="shemaNight.get('nс5')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nс5')">
+            <textPath  xlink:href="#nс5">{{shemaNight.get('nс5')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3478.6694,595.41684 v 260.79671 h 190.423 V 594.7269 h -189.0431 z"
+            *ngIf="shemaNight.get('nс6')"
+            fill="white"
+          />
+          <path
+            d="M 3488.3285,847.24435 3658.7433,609.21561"
+            id="nс6"
+            fill="white"
+            *ngIf="shemaNight.get('nс6')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nс6')">
+            <textPath  xlink:href="#nс6">{{shemaNight.get('nс6')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 3075.7454,934.17659 V 1189.4538 H 3247.54 V 935.55647 Z"
+            *ngIf="shemaNight.get('nю71')"
+            fill="white"
+          />
+          <path
+            d="M 3093.6838,1177.7248 3237.8809,943.14579"
+            id="nю71"
+            fill="white"
+            *ngIf="shemaNight.get('nю71')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю71')">
+            <textPath  xlink:href="#nю71">{{shemaNight.get('nю71')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3259.269,935.55647 h 191.1129 V 1187.384 h -186.9733 z"
+            *ngIf="shemaNight.get('nю72')"
+            fill="white"
+          />
+          <path
+            d="M 3274.4476,1181.1745 3441.4127,949.35524"
+            id="nю72"
+            fill="white"
+            *ngIf="shemaNight.get('nю72')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю72')">
+            <textPath  xlink:href="#nю72">{{shemaNight.get('nю72')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3461.421,932.79672 v 255.27718 h 181.4537 V 932.79672 Z"
+            *ngIf="shemaNight.get('nю73')"
+            fill="white"
+          />
+          <path
+            d="M 3479.3593,1177.7248 3627.0062,949.35524"
+            id="nю73"
+            fill="white"
+            *ngIf="shemaNight.get('nю73')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю73')">
+            <textPath  xlink:href="#nю73">{{shemaNight.get('nю73')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 3779.9402,931.81283 V 1189.403 h 185.3869 V 922.05563 h -189.2898 z"
+            *ngIf="shemaNight.get('nю74')"
+            fill="white"
+          />
+          <path
+            d="M 3800.4303,1176.7186 3948.7398,942.54575"
+            id="nю74"
+            fill="white"
+            *ngIf="shemaNight.get('nю74')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю74')">
+            <textPath  xlink:href="#nю74">{{shemaNight.get('nю74')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3978.0114,922.05563 v 269.29877 h 171.7268 V 921.07991 Z"
+            *ngIf="shemaNight.get('nю75')"
+            fill="white"
+          />
+          <path
+            d="M 4002.4044,1176.7186 4136.0781,943.52147"
+            id="nю75"
+            fill="white"
+            *ngIf="shemaNight.get('nю75')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю75')">
+            <textPath  xlink:href="#nю75">{{shemaNight.get('nю75')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4162.4226,920.10419 v 270.27451 h 168.7996 V 912.29843 Z"
+            *ngIf="shemaNight.get('nю76')"
+            fill="white"
+          />
+          <path
+            d="M 4183.8884,1175.7429 4313.6592,938.64287"
+            id="nю76"
+            fill="white"
+            *ngIf="shemaNight.get('nю76')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю76')">
+            <textPath  xlink:href="#nю76">{{shemaNight.get('nю76')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3071.6058,1203.2526 h 180.7638 v 249.7577 h -184.9035 z"
+            *ngIf="shemaNight.get('nю61')"
+            fill="white"
+          />
+          <path
+            d="m 3078.5051,1440.5914 151.7865,-215.2608"
+            id="nю61"
+            fill="white"
+            *ngIf="shemaNight.get('nю61')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю61')">
+            <textPath  xlink:href="#nю61">{{shemaNight.get('nю61')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3273.0678,1206.0123 h 168.3449 v 244.2382 h -168.3449 z"
+            *ngIf="shemaNight.get('nю62')"
+            fill="white"
+          />
+          <path
+            d="M 3289.6263,1439.2115 3416.575,1229.4702"
+            id="nю62"
+            fill="white"
+            *ngIf="shemaNight.get('nю62')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю62')">
+            <textPath  xlink:href="#nю62">{{shemaNight.get('nю62')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3459.3511,1208.7721 v 242.8583 h 187.6633 v -244.2382 z"
+            *ngIf="shemaNight.get('nю63')"
+            fill="white"
+          />
+          <path
+            d="M 3484.1889,1436.4517 3618.037,1225.3306"
+            id="nю63"
+            fill="white"
+            *ngIf="shemaNight.get('nю63')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю63')">
+            <textPath  xlink:href="#nю63">{{shemaNight.get('nю63')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3053.6674,1595.1376 h 191.8028 v 259.4168 h -197.3224 z"
+            *ngIf="shemaNight.get('nю51')"
+            fill="white"
+          />
+          <path
+            d="m 3097.8234,1833.8563 110.3902,-190.423"
+            id="nю51"
+            fill="white"
+            *ngIf="shemaNight.get('nю51')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю51')">
+            <textPath  xlink:href="#nю51">{{shemaNight.get('nю51')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3263.4086,1589.6181 v 259.4168 h 176.6243 v -262.1766 z"
+            *ngIf="shemaNight.get('nю52')"
+            fill="white"
+          />
+          <path
+            d="m 3285.4867,1835.2361 129.7084,-219.4004"
+            id="nю52"
+            fill="white"
+            *ngIf="shemaNight.get('nю52')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю52')">
+            <textPath  xlink:href="#nю52">{{shemaNight.get('nю52')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3457.9713,1585.4784 v 273.2156 h 153.1663 v -280.1149 z"
+            *ngIf="shemaNight.get('nю53')"
+            fill="white"
+          />
+          <path
+            d="m 3466.2505,1829.7166 126.9487,-218.0205"
+            id="nю53"
+            fill="white"
+            *ngIf="shemaNight.get('nю53')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю53')">
+            <textPath  xlink:href="#nю53">{{shemaNight.get('nю53')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3783.6222,1203.2526 v 249.7577 h 184.9035 v -245.6181 z"
+            *ngIf="shemaNight.get('nю64')"
+            fill="white"
+          />
+          <path
+            d="m 3808.46,1422.653 126.9486,-194.5626"
+            id="nю64"
+            fill="white"
+            *ngIf="shemaNight.get('nю64')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю64')">
+            <textPath  xlink:href="#nю64">{{shemaNight.get('nю64')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3989.2238,1207.3922 v 245.6181 h 165.5852 v -246.998 z"
+            *ngIf="shemaNight.get('nю65')"
+            fill="white"
+          />
+          <path
+            d="m 3996.1232,1440.5914 140.7474,-212.501"
+            id="nю65"
+            fill="white"
+            *ngIf="shemaNight.get('nю65')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю65')">
+            <textPath  xlink:href="#nю65">{{shemaNight.get('nю65')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4176.8871,1211.5318 v 241.4785 h 175.2443 v -246.998 z"
+            *ngIf="shemaNight.get('nю66')"
+            fill="white"
+          />
+          <path
+            d="m 4203.1047,1441.9713 125.5688,-208.3614"
+            id="nю66"
+            fill="white"
+            *ngIf="shemaNight.get('nю66')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю66')">
+            <textPath  xlink:href="#nю66">{{shemaNight.get('nю66')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3769.8234,1597.8973 v 258.037 h 176.6242 v -259.4168 z"
+            *ngIf="shemaNight.get('nю54')"
+            fill="white"
+          />
+          <path
+            d="m 3796.0411,1821.4374 128.3285,-189.0431"
+            id="nю54"
+            fill="white"
+            *ngIf="shemaNight.get('nю54')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю54')">
+            <textPath  xlink:href="#nю54">{{shemaNight.get('nю54')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3978.1848,1597.8973 v 260.7967 h 166.9651 v -266.3162 z"
+            *ngIf="shemaNight.get('nю55')"
+            fill="white"
+          />
+          <path
+            d="m 3990.6037,1843.5154 128.3285,-222.1602"
+            id="nю55"
+            fill="white"
+            *ngIf="shemaNight.get('nю55')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю55')">
+            <textPath  xlink:href="#nю55">{{shemaNight.get('nю55')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4385.2485,1234.9897 v 240.0986 h 248.3778 v -244.2382 z"
+            *ngIf="shemaNight.get('nб35')"
+            fill="white"
+          />
+          <path
+            d="m 4412.846,1457.1499 194.5626,-198.7023"
+            id="nб35"
+            fill="white"
+            *ngIf="shemaNight.get('nб35')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб35')">
+            <textPath  xlink:href="#nб35">{{shemaNight.get('nб35')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4646.0452,1240.5092 v 242.8584 h 219.4004 V 1232.23 Z"
+            *ngIf="shemaNight.get('nб36')"
+            fill="white"
+          />
+          <path
+            d="m 4677.7823,1473.7084 155.9261,-209.7413"
+            id="nб36"
+            fill="white"
+            *ngIf="shemaNight.get('nб36')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб36')">
+            <textPath  xlink:href="#nб36">{{shemaNight.get('nб36')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4893.0431,1363.3183 v 252.5174 h 245.6181 v -255.2772 z"
+            *ngIf="shemaNight.get('nб37')"
+            fill="white"
+          />
+          <path
+            d="m 4906.8419,1602.037 191.8029,-202.8419"
+            id="nб37"
+            fill="white"
+            *ngIf="shemaNight.get('nб37')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб37')">
+            <textPath  xlink:href="#nб37">{{shemaNight.get('nб37')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4897.1828,1644.8131 v 215.2608 h 230.4394 v -230.4394 z"
+            *ngIf="shemaNight.get('nб38')"
+            fill="white"
+          />
+          <path
+            d="m 4919.2608,1843.5154 182.1437,-183.5236"
+            id="nб38"
+            fill="white"
+            *ngIf="shemaNight.get('nб38')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб38')">
+            <textPath  xlink:href="#nб38">{{shemaNight.get('nб38')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3049.5277,1873.8727 h 182.1438 v 230.4394 h -178.0041 z"
+            *ngIf="shemaNight.get('nю41')"
+            fill="white"
+          />
+          <path
+            d="M 3085.4045,2084.9938 3215.1129,1893.191"
+            id="nю41"
+            fill="white"
+            *ngIf="shemaNight.get('nю41')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю41')">
+            <textPath  xlink:href="#nю41">{{shemaNight.get('nю41')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3248.23,1875.2526 h 169.7248 v 227.6796 h -176.6242 z"
+            *ngIf="shemaNight.get('nю42')"
+            fill="white"
+          />
+          <path
+            d="m 3267.5483,2082.2341 124.1889,-175.2444"
+            id="nю42"
+            fill="white"
+            *ngIf="shemaNight.get('nю42')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю42')">
+            <textPath  xlink:href="#nю42">{{shemaNight.get('nю42')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3441.4127,1869.7331 h 164.2054 v 235.9589 h -169.7249 z"
+            *ngIf="shemaNight.get('nю43')"
+            fill="white"
+          />
+          <path
+            d="m 3451.0719,2089.1335 120.0493,-198.7023"
+            id="nю43"
+            fill="white"
+            *ngIf="shemaNight.get('nю43')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю43')">
+            <textPath  xlink:href="#nю43">{{shemaNight.get('nю43')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3066.0862,2294.7351 h 189.0432 v 235.9589 h -198.7023 z"
+            *ngIf="shemaNight.get('nю31')"
+            fill="white"
+          />
+          <path
+            d="M 3092.3039,2503.0965 3226.152,2333.3717"
+            id="nю31"
+            fill="white"
+            *ngIf="shemaNight.get('nю31')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю31')">
+            <textPath  xlink:href="#nю31">{{shemaNight.get('nю31')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3274.4476,2297.4949 v 237.3388 H 3427.614 V 2285.076 Z"
+            *ngIf="shemaNight.get('nю32')"
+            fill="white"
+          />
+          <path
+            d="m 3293.7659,2511.3758 118.6694,-198.7023"
+            id="nю32"
+            fill="white"
+            *ngIf="shemaNight.get('nю32')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю32')">
+            <textPath  xlink:href="#nю32">{{shemaNight.get('nю32')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3451.0719,2285.076 v 245.618 h 158.6858 v -248.3778 z"
+            *ngIf="shemaNight.get('nю33')"
+            fill="white"
+          />
+          <path
+            d="m 3470.3901,2514.1355 125.5688,-202.8419"
+            id="nю33"
+            fill="white"
+            *ngIf="shemaNight.get('nю33')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю33')">
+            <textPath  xlink:href="#nю33">{{shemaNight.get('nю33')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3778.1027,1875.2526 h 169.7248 v 238.7187 h -180.7638 l -4.1397,-237.3389 z"
+            *ngIf="shemaNight.get('nю44')"
+            fill="white"
+          />
+          <path
+            d="M 3780.8624,2104.3121 3917.4702,1893.191"
+            id="nю44"
+            fill="white"
+            *ngIf="shemaNight.get('nю44')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю44')">
+            <textPath  xlink:href="#nю44">{{shemaNight.get('nю44')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3965.7659,1871.1129 h 165.5852 v 245.6181 h -155.926 z"
+            *ngIf="shemaNight.get('nю45')"
+            fill="white"
+          />
+          <path
+            d="m 3998.883,2091.8932 103.4907,-193.1827"
+            id="nю45"
+            fill="white"
+            *ngIf="shemaNight.get('nю45')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю45')">
+            <textPath  xlink:href="#nю45">{{shemaNight.get('nю45')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3758.7844,2300.2546 v 240.0986 h 194.5626 v -248.3778 z"
+            *ngIf="shemaNight.get('nю34')"
+            fill="white"
+          />
+          <path
+            d="m 3797.4209,2518.2752 131.0883,-182.1438"
+            id="nю34"
+            fill="white"
+            *ngIf="shemaNight.get('nю34')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю34')">
+            <textPath  xlink:href="#nю34">{{shemaNight.get('nю34')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3971.2854,2294.7351 v 244.2382 h 171.1047 v -248.3778 z"
+            *ngIf="shemaNight.get('nю35')"
+            fill="white"
+          />
+          <path
+            d="m 3994.7433,2523.7947 99.3512,-179.384"
+            id="nю35"
+            fill="white"
+            *ngIf="shemaNight.get('nю35')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю35')">
+            <textPath  xlink:href="#nю35">{{shemaNight.get('nю35')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4160.3285,2293.3552 v 252.5175 h 200.0822 v -258.037 z"
+            *ngIf="shemaNight.get('nю36')"
+            fill="white"
+          />
+          <path
+            d="m 4178.2669,2526.5544 151.7865,-190.423"
+            id="nю36"
+            fill="white"
+            *ngIf="shemaNight.get('nю36')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю36')">
+            <textPath  xlink:href="#nю36">{{shemaNight.get('nю36')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 4393.5277,1865.5934 V 2127.77 h 251.1376 v -256.6571 z"
+            *ngIf="shemaNight.get('nб34')"
+            fill="white"
+          />
+          <path
+            d="m 4416.9856,2104.3121 198.7023,-190.423"
+            id="nб34"
+            fill="white"
+            *ngIf="shemaNight.get('nб34')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб34')">
+            <textPath  xlink:href="#nб34">{{shemaNight.get('nб34')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4665.3635,1869.7331 v 251.1375 h 216.6406 v -251.1375 z"
+            *ngIf="shemaNight.get('nб33')"
+            fill="white"
+          />
+          <path
+            d="m 4686.0616,2091.8932 166.9651,-189.0431"
+            id="nб33"
+            fill="white"
+            *ngIf="shemaNight.get('nб33')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб33')">
+            <textPath  xlink:href="#nб33">{{shemaNight.get('nб33')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4407.3265,2167.7864 h 238.7187 v 256.6571 h -227.6797 z"
+            *ngIf="shemaNight.get('nб31')"
+            fill="white"
+          />
+          <path
+            d="m 4447.3429,2405.1253 179.384,-202.8419"
+            id="nб31"
+            fill="white"
+            *ngIf="shemaNight.get('nб31')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб31')">
+            <textPath  xlink:href="#nб31">{{shemaNight.get('nб31')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4662.6037,2170.5462 v 249.7577 h 241.4784 v -248.3778 z"
+            *ngIf="shemaNight.get('nб32')"
+            fill="white"
+          />
+          <path
+            d="m 4684.6817,2413.4045 184.9035,-197.3224"
+            id="nб32"
+            fill="white"
+            *ngIf="shemaNight.get('nб32')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб32')">
+            <textPath  xlink:href="#nб32">{{shemaNight.get('nб32')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 2880.3262,2769.094 h 185.3868 v -243.93 h -179.5325 z"
+            *ngIf="shemaNight.get('nю21')"
+            fill="white"
+          />
+          <path
+            d="m 2929.1122,2739.8224 117.0864,-173.6782"
+            id="nю21"
+            fill="white"
+            *ngIf="shemaNight.get('nю21')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю21')">
+            <textPath  xlink:href="#nю21">{{shemaNight.get('nю21')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3087.1788,2765.1912 h 152.2124 V 2538.8241 H 3083.276 Z"
+            *ngIf="shemaNight.get('nю22')"
+            fill="white"
+          />
+          <path
+            d="m 3122.3048,2732.0167 105.3778,-167.8239"
+            id="nю22"
+            fill="white"
+            *ngIf="shemaNight.get('nю22')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю22')">
+            <textPath  xlink:href="#nю22">{{shemaNight.get('nю22')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3268.6628,2769.094 h 161.9696 v -228.3185 h -175.6297 z"
+            *ngIf="shemaNight.get('nю23')"
+            fill="white"
+          />
+          <path
+            d="m 3294.0315,2747.6282 122.9408,-165.8724"
+            id="nю23"
+            fill="white"
+            *ngIf="shemaNight.get('nю23')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю23')">
+            <textPath  xlink:href="#nю23">{{shemaNight.get('nю23')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3446.2439,2554.4356 h 169.7753 v 240.0272 H 3442.341 Z"
+            *ngIf="shemaNight.get('ю24')"
+            fill="white"
+          />
+          <path
+            d="m 3477.4669,2767.1426 120.9893,-173.6782"
+            id="ю24"
+            fill="white"
+            *ngIf="shemaNight.get('ю24')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('ю24')">
+            <textPath  xlink:href="#ю24">{{shemaNight.get('ю24')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 2888.1319,2845.2002 c 21.4659,0 161.9696,0 161.9696,0 v 281.0075 h -175.6297 z"
+            *ngIf="shemaNight.get('nю11')"
+            fill="white"
+          />
+          <path
+            d="m 2897.8891,3093.0332 126.8436,-200.9984"
+            id="nю11"
+            fill="white"
+            *ngIf="shemaNight.get('nю11')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю11')">
+            <textPath  xlink:href="#nю11">{{shemaNight.get('nю11')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 3075.4702,2837.3945 H 3229.634 V 3114.499 H 3067.6644 Z"
+            *ngIf="shemaNight.get('nю12')"
+            fill="white"
+          />
+          <path
+            d="m 3098.8875,3083.276 119.0379,-218.5614"
+            id="nю12"
+            fill="white"
+            *ngIf="shemaNight.get('nю12')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю12')">
+            <textPath  xlink:href="#nю12">{{shemaNight.get('nю12')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3253.0513,2845.2002 h 165.8724 v 281.0075 h -169.7753 z"
+            *ngIf="shemaNight.get('nю13')"
+            fill="white"
+          />
+          <path
+            d="m 3292.0801,3093.0332 103.4263,-204.9013"
+            id="nю13"
+            fill="white"
+            *ngIf="shemaNight.get('nю13')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю13')">
+            <textPath  xlink:href="#nю13">{{shemaNight.get('nю13')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3446.2439,2851.0545 h 163.921 v 267.3474 h -169.7753 z"
+            *ngIf="shemaNight.get('nю14')"
+            fill="white"
+          />
+          <path
+            d="M 3457.9525,3089.1303 3588.699,2870.5689"
+            id="nю14"
+            fill="white"
+            *ngIf="shemaNight.get('nю14')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю14')">
+            <textPath  xlink:href="#nю14">{{shemaNight.get('nю14')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3766.2801,2782.7541 h 177.5811 v -236.1243 h -177.5811 z"
+            *ngIf="shemaNight.get('nю25')"
+            fill="white"
+          />
+          <path
+            d="m 3795.5517,2761.2883 122.9408,-181.484"
+            id="nю25"
+            fill="white"
+            *ngIf="shemaNight.get('nю25')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю25')">
+            <textPath  xlink:href="#nю25">{{shemaNight.get('nю25')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3971.1814,2784.7056 h 179.5325 v -234.1729 h -177.5811 z"
+            *ngIf="shemaNight.get('nю26')"
+            fill="white"
+          />
+          <path
+            d="m 4019.9674,2761.2883 109.2807,-177.5811"
+            id="nю26"
+            fill="white"
+            *ngIf="shemaNight.get('nю26')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю26')">
+            <textPath  xlink:href="#nю26">{{shemaNight.get('nю26')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4170.2283,2784.7056 h 161.9696 V 2550.5327 H 4164.374 Z"
+            *ngIf="shemaNight.get('nю27')"
+            fill="white"
+          />
+          <path
+            d="m 4187.7913,2765.1912 97.572,-171.7268"
+            id="nю27"
+            fill="white"
+            *ngIf="shemaNight.get('nю27')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю27')">
+            <textPath  xlink:href="#nю27">{{shemaNight.get('nю27')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3787.746,2854.9574 h 171.7267 v 259.5416 h -165.8724 z"
+            *ngIf="shemaNight.get('nю15')"
+            fill="white"
+          />
+          <path
+            d="m 3813.1147,3094.9846 126.8436,-179.5325"
+            id="nю15"
+            fill="white"
+            *ngIf="shemaNight.get('nю15')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю15')">
+            <textPath  xlink:href="#nю15">{{shemaNight.get('nю15')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3988.7443,2858.8603 h 183.4355 v 241.9786 h -191.2412 z"
+            *ngIf="shemaNight.get('nю16')"
+            fill="white"
+          />
+          <path
+            d="m 4008.2587,3081.3245 126.8437,-171.7267"
+            id="nю16"
+            fill="white"
+            *ngIf="shemaNight.get('nю16')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю16')">
+            <textPath  xlink:href="#nю16">{{shemaNight.get('nю16')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4201.4514,2872.5204 h 171.7267 v 245.8815 h -175.6296 z"
+            *ngIf="shemaNight.get('nю17')"
+            fill="white"
+          />
+          <path
+            d="m 4242.4316,3085.2274 105.3778,-163.921"
+            id="nю17"
+            fill="white"
+            *ngIf="shemaNight.get('nю17')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю17')">
+            <textPath  xlink:href="#nю17">{{shemaNight.get('nю17')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4392.6925,2870.5689 h 160.0181 v 241.9787 h -165.8724 z"
+            *ngIf="shemaNight.get('nю18')"
+            fill="white"
+          />
+          <path
+            d="m 4433.6728,3079.3731 c 0,-7.8058 81.9605,-165.8725 81.9605,-165.8725"
+            id="nю18"
+            fill="white"
+            *ngIf="shemaNight.get('nю18')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю18')">
+            <textPath  xlink:href="#nю18">{{shemaNight.get('nю18')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4589.788,2870.5689 h 173.6782 v 247.833 h -183.4354 z"
+            *ngIf="shemaNight.get('nю19')"
+            fill="white"
+          />
+          <path
+            d="m 4621.0111,3102.7904 111.2321,-181.484"
+            id="nю19"
+            fill="white"
+            *ngIf="shemaNight.get('nю19')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nю19')">
+            <textPath  xlink:href="#nю19">{{shemaNight.get('nю19')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3422.8266,3155.4793 h 271.2502 v 273.2016 h -273.2016 z"
+            *ngIf="shemaNight.get('nб43')"
+            fill="white"
+          />
+          <path
+            d="m 3463.8069,3407.2151 189.2897,-202.9498"
+            id="nб43"
+            fill="white"
+            *ngIf="shemaNight.get('nб43')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб43')">
+            <textPath  xlink:href="#nб43">{{shemaNight.get('nб43')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3742.8628,3167.1879 h 286.8618 v 251.7358 H 3752.62 Z"
+            *ngIf="shemaNight.get('nб44')"
+            fill="white"
+          />
+          <path
+            d="m 3797.5032,3395.5064 208.8041,-181.4839"
+            id="nб44"
+            fill="white"
+            *ngIf="shemaNight.get('nб44')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб44')">
+            <textPath  xlink:href="#nб44">{{shemaNight.get('nб44')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4060.9476,3161.3336 h 300.5219 v 259.5416 h -300.5219 z"
+            *ngIf="shemaNight.get('nб47')"
+            fill="white"
+          />
+          <path
+            d="m 4109.7337,3381.8464 c 7.8057,-3.9029 218.5613,-169.7754 218.5613,-169.7754"
+            id="nб47"
+            fill="white"
+            *ngIf="shemaNight.get('nб47')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб47')">
+            <textPath  xlink:href="#nб47">{{shemaNight.get('nб47')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3418.9237,3674.5624 h 312.2305 v -236.1243 h -312.2305 z"
+            *ngIf="shemaNight.get('nб42')"
+            fill="white"
+          />
+          <path
+            d="m 3459.904,3635.5336 230.27,-152.2123"
+            id="nб42"
+            fill="white"
+            *ngIf="shemaNight.get('nб42')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб42')">
+            <textPath  xlink:href="#nб42">{{shemaNight.get('nб42')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3768.2316,3432.5838 h 267.3473 v 249.7844 h -275.1531 z"
+            *ngIf="shemaNight.get('nб45')"
+            fill="white"
+          />
+          <path
+            d="m 3805.3089,3658.9509 197.0955,-181.484"
+            id="nб45"
+            fill="white"
+            *ngIf="shemaNight.get('nб45')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб45')">
+            <textPath  xlink:href="#nб45">{{shemaNight.get('nб45')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4070.7048,3438.4381 h 282.9589 v 282.9589 h -281.0074 z"
+            *ngIf="shemaNight.get('nб48')"
+            fill="white"
+          />
+          <path
+            d="m 4096.0736,3690.174 216.6099,-206.8527"
+            id="nб48"
+            fill="white"
+            *ngIf="shemaNight.get('nб48')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб48')">
+            <textPath  xlink:href="#nб48">{{shemaNight.get('nб48')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3438.4381,3945.8127 h 302.4733 V 3690.174 h -312.2305 z"
+            *ngIf="shemaNight.get('nб41')"
+            fill="white"
+          />
+          <path
+            d="m 3465.7583,3920.4439 230.27,-183.4354"
+            id="nб41"
+            fill="white"
+            *ngIf="shemaNight.get('nб41')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб41')">
+            <textPath  xlink:href="#nб41">{{shemaNight.get('nб41')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 3760.4258,3945.8127 h 296.619 v -247.833 h -282.9589 z"
+            *ngIf="shemaNight.get('nб46')"
+            fill="white"
+          />
+          <path
+            d="m 3793.6003,3900.9295 212.707,-154.1638"
+            id="nб46"
+            fill="white"
+            *ngIf="shemaNight.get('nб46')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб46')">
+            <textPath  xlink:href="#nб46">{{shemaNight.get('nб46')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 735.69306,3134.0134 h 286.86174 v 249.7844 H 731.79018 Z"
+            *ngIf="shemaNight.get('nб24')"
+            fill="white"
+          />
+          <path
+            d="M 774.72187,3366.2348 1003.0404,3180.848"
+            id="nб24"
+            fill="white"
+            *ngIf="shemaNight.get('nб24')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб24')">
+            <textPath  xlink:href="#nб24">{{shemaNight.get('nб24')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1059.6322,3374.0406 h 288.8132 v -255.6387 h -286.8618 z"
+            *ngIf="shemaNight.get('nб25')"
+            fill="white"
+          />
+          <path
+            d="m 1108.4182,3335.0118 200.9984,-179.5325"
+            id="nб25"
+            fill="white"
+            *ngIf="shemaNight.get('nб25')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб25')">
+            <textPath  xlink:href="#nб25">{{shemaNight.get('nб25')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1061.5836,3395.5064 h 284.9103 v 230.27 h -281.0074 z"
+            *ngIf="shemaNight.get('nб26')"
+            fill="white"
+          />
+          <path
+            d="m 1104.5153,3590.6505 202.9498,-158.0667"
+            id="nб26"
+            fill="white"
+            *ngIf="shemaNight.get('nб26')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб26')">
+            <textPath  xlink:href="#nб26">{{shemaNight.get('nб26')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 735.69306,3637.4851 H 1008.8947 V 3395.5064 H 739.59594 Z"
+            *ngIf="shemaNight.get('nб23')"
+            fill="white"
+          />
+          <path
+            d="M 782.52763,3614.0678 981.57456,3454.0497"
+            id="nб23"
+            fill="white"
+            *ngIf="shemaNight.get('nб23')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб23')">
+            <textPath  xlink:href="#nб23">{{shemaNight.get('nб23')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 731.79018,3895.0752 H 1022.5548 V 3645.2908 H 735.69306 Z"
+            *ngIf="shemaNight.get('nб22')"
+            fill="white"
+          />
+          <path
+            d="M 788.38195,3861.9007 1003.0404,3692.1254"
+            id="nб22"
+            fill="white"
+            *ngIf="shemaNight.get('nб22')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб22')">
+            <textPath  xlink:href="#nб22">{{shemaNight.get('nб22')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1063.5351,3653.0966 h 273.2016 v 234.1728 h -273.2016 z"
+            *ngIf="shemaNight.get('nб21')"
+            fill="white"
+          />
+          <path
+            d="m 1090.8552,3854.095 222.4642,-167.8239"
+            id="nб21"
+            fill="white"
+            *ngIf="shemaNight.get('nб21')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб21')">
+            <textPath  xlink:href="#nб21">{{shemaNight.get('nб21')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 4697.6051,510.78955 -3.9029,335.1599 454.1978,-4.8786 -7.3179,-334.18418 z"
+            *ngIf="shemaNight.get('nvip')"
+            fill="white"
+          />
+          <path
+            d="M 4708.338,830.33793 5124.9706,533.23111"
+            id="nvip"
+            fill="white"
+            *ngIf="shemaNight.get('nvip')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nvip')">
+            <textPath  xlink:href="#nvip">{{shemaNight.get('nvip')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 388.33666,2833.4916 h 191.24116 v 290.7646 H 388.33666 Z"
+            *ngIf="shemaNight.get('n19')"
+            fill="white"
+          />
+          <path
+            d="M 439.07411,3093.0332 569.82062,2876.4233"
+            id="n19"
+            fill="white"
+            *ngIf="shemaNight.get('n19')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n19')">
+            <textPath  xlink:href="#n19">{{shemaNight.get('n19')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 610.80087,2835.443 h 167.82388 v 286.8618 h -173.6782 l 3.90288,-279.056 z"
+            *ngIf="shemaNight.get('n18')"
+            fill="white"
+          />
+          <path
+            d="M 632.26672,3081.3245 768.86755,2892.0348"
+            id="n18"
+            fill="white"
+            *ngIf="shemaNight.get('n18')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n18')">
+            <textPath  xlink:href="#n18">{{shemaNight.get('n18')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 807.89636,2839.3459 h 204.90124 v 263.4445 H 803.99348 Z"
+            *ngIf="shemaNight.get('n17')"
+            fill="white"
+          />
+          <path
+            d="M 831.31365,3075.4702 985.47744,2892.0348"
+            id="n17"
+            fill="white"
+            *ngIf="shemaNight.get('n17')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n17')">
+            <textPath  xlink:href="#n17">{{shemaNight.get('n17')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 1030.3606,2829.5887 H 1196.233 V 3114.499 H 1020.6034 Z"
+            *ngIf="shemaNight.get('n16')"
+            fill="white"
+          />
+          <path
+            d="m 1059.6322,3079.3731 103.4263,-206.8527"
+            id="n16"
+            fill="white"
+            *ngIf="shemaNight.get('n16')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n16')">
+            <textPath  xlink:href="#n16">{{shemaNight.get('n16')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1223.5532,2854.9574 h 181.4839 v 249.7844 h -183.4354 v -238.0757 z"
+            *ngIf="shemaNight.get('n15')"
+            fill="white"
+          />
+          <path
+            d="m 1252.8248,3077.4216 120.9893,-173.6782"
+            id="n15"
+            fill="white"
+            *ngIf="shemaNight.get('n15')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n15')">
+            <textPath  xlink:href="#n15">{{shemaNight.get('n15')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 811.79924,2542.7269 c 7.80576,3.9029 204.90126,0 204.90126,0 v 241.9787 H 802.04204 Z"
+            *ngIf="shemaNight.get('n27')"
+            fill="white"
+          />
+          <path
+            d="M 839.11941,2755.434 1001.089,2560.2899"
+            id="n27"
+            fill="white"
+            *ngIf="shemaNight.get('n27')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n27')">
+            <textPath  xlink:href="#n27">{{shemaNight.get('n27')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1045.9721,2544.6784 h 158.0667 v 249.7844 h -173.6782 z"
+            *ngIf="shemaNight.get('n26')"
+            fill="white"
+          />
+          <path
+            d="m 1075.2437,2755.434 87.8148,-163.921"
+            id="n26"
+            fill="white"
+            *ngIf="shemaNight.get('n26')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n26')">
+            <textPath  xlink:href="#n26">{{shemaNight.get('n26')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1241.1161,2542.7269 h 150.261 v 243.9301 h -171.7268 z"
+            *ngIf="shemaNight.get('n25')"
+            fill="white"
+          />
+          <path
+            d="m 1262.582,2743.7253 87.8148,-156.1152"
+            id="n25"
+            fill="white"
+            *ngIf="shemaNight.get('n25')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n25')">
+            <textPath  xlink:href="#n25">{{shemaNight.get('n25')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1578.7153,2546.6298 h 175.6297 v 218.5614 h -177.5811 z"
+            *ngIf="shemaNight.get('n24')"
+            fill="white"
+          />
+          <path
+            d="m 1611.8898,2737.871 115.135,-165.8724"
+            id="n24"
+            fill="white"
+            *ngIf="shemaNight.get('n24')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n24')">
+            <textPath  xlink:href="#n24">{{shemaNight.get('n24')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1779.7137,2542.7269 h 152.2124 v 226.3671 l -154.1638,-3.9028 5.8543,-206.8527 z"
+            *ngIf="shemaNight.get('n23')"
+            fill="white"
+          />
+          <path
+            d="m 1820.694,2753.4825 95.6206,-185.3868"
+            id="n23"
+            fill="white"
+            *ngIf="shemaNight.get('n23')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n23')">
+            <textPath  xlink:href="#n23">{{shemaNight.get('n23')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1969.0034,2544.6784 142.4552,1.9514 v 232.2214 h -148.3095 z"
+            *ngIf="shemaNight.get('n22')"
+            fill="white"
+          />
+          <path
+            d="m 1990.4693,2747.6282 89.7663,-165.8724"
+            id="n22"
+            fill="white"
+            *ngIf="shemaNight.get('n22')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n22')">
+            <textPath  xlink:href="#n22">{{shemaNight.get('n22')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 2152.4389,2546.6298 h 156.1152 v 224.4157 h -152.2124 z"
+            *ngIf="shemaNight.get('n21')"
+            fill="white"
+          />
+          <path
+            d="m 2183.6619,2745.6768 87.8148,-154.1638"
+            id="n21"
+            fill="white"
+            *ngIf="shemaNight.get('n21')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n21')">
+            <textPath  xlink:href="#n21">{{shemaNight.get('n21')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1592.3754,2864.7146 h 161.9696 v 232.2214 c 0,0 -165.8724,0 -167.8239,0 -1.9514,0 5.8543,-232.2214 5.8543,-232.2214 z"
+            *ngIf="shemaNight.get('n14')"
+            fill="white"
+          />
+          <path
+            d="m 1611.8898,3081.3245 c 3.872,0 33.6734,-47.5371 62.727,-95.4502 29.517,-48.6772 58.2623,-97.7424 58.2623,-97.7424"
+            id="n14"
+            fill="white"
+            *ngIf="shemaNight.get('n14')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n14')">
+            <textPath  xlink:href="#n14">{{shemaNight.get('n14')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1773.8594,2860.8117 h 158.0667 v 234.1729 h -154.1638 z"
+            *ngIf="shemaNight.get('n13')"
+            fill="white"
+          />
+          <path
+            d="m 1803.131,3079.3731 105.3778,-187.3383"
+            id="n13"
+            fill="white"
+            *ngIf="shemaNight.get('n13')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n13')">
+            <textPath  xlink:href="#n13">{{shemaNight.get('n13')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1959.2462,2858.8603 h 161.9696 v 261.493 l -171.7268,-1.9514 z"
+            *ngIf="shemaNight.get('n12')"
+            fill="white"
+          />
+          <path
+            d="m 1978.7606,3091.0817 113.1836,-193.1926"
+            id="n12"
+            fill="white"
+            *ngIf="shemaNight.get('n12')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n12')">
+            <textPath  xlink:href="#n12">{{shemaNight.get('n12')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 2142.6816,2866.6661 h 167.8239 v 247.8329 h -165.8724 z"
+            *ngIf="shemaNight.get('n11')"
+            fill="white"
+          />
+          <path
+            d="m 2168.0504,3091.0817 105.3778,-187.3383"
+            id="n11"
+            fill="white"
+            *ngIf="shemaNight.get('n11')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n11')">
+            <textPath  xlink:href="#n11">{{shemaNight.get('n11')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 243.93006,1910.4602 v 273.2017 H 493.71444 V 1918.266 Z"
+            *ngIf="shemaNight.get('nб13')"
+            fill="white"
+          />
+          <path
+            d="m 281.00743,2154.3903 173.6782,-193.1926"
+            id="nб13"
+            fill="white"
+            *ngIf="shemaNight.get('nб13')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб13')">
+            <textPath  xlink:href="#nб13">{{shemaNight.get('nб13')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 222.46421,2232.4479 h 267.34735 v 251.7358 c 0,0 -275.15311,3.9029 -275.15311,0 0,-3.9028 7.80576,-251.7358 7.80576,-251.7358 z"
+            *ngIf="shemaNight.get('nб12')"
+            fill="white"
+          />
+          <path
+            d="M 247.83294,2445.1549 466.39428,2279.2825"
+            id="nб12"
+            fill="white"
+            *ngIf="shemaNight.get('nб12')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб12')">
+            <textPath  xlink:href="#nб12">{{shemaNight.get('nб12')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 519.08317,2226.5936 h 265.3959 v 253.6873 H 507.37453 Z"
+            *ngIf="shemaNight.get('nб11')"
+            fill="white"
+          />
+          <path
+            d="M 565.91774,2433.4463 751.30459,2257.8166"
+            id="nб11"
+            fill="white"
+            *ngIf="shemaNight.get('nб11')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб11')">
+            <textPath  xlink:href="#nб11">{{shemaNight.get('nб11')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 835.21653,1865.5771 h 167.82387 v 228.3185 H 815.70212 Z"
+            *ngIf="shemaNight.get('n46')"
+            fill="white"
+          />
+          <path
+            d="M 848.87661,2070.4784 1008.8947,1890.9458"
+            id="n46"
+            fill="white"
+            *ngIf="shemaNight.get('n46')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n46')">
+            <textPath  xlink:href="#n46">{{shemaNight.get('n46')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1042.0692,1863.6257 h 161.9696 v 232.2214 h -173.6782 z"
+            *ngIf="shemaNight.get('n45')"
+            fill="white"
+          />
+          <path
+            d="m 1057.6807,2070.4784 140.5038,-173.6783"
+            id="n45"
+            fill="white"
+            *ngIf="shemaNight.get('n45')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n45')">
+            <textPath  xlink:href="#n45">{{shemaNight.get('n45')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1231.3589,1869.48 h 158.0667 v 230.27 h -161.9695 z"
+            *ngIf="shemaNight.get('n44')"
+            fill="white"
+          />
+          <path
+            d="M 1252.8248,2070.4784 1360.154,1898.7516"
+            id="n44"
+            fill="white"
+            *ngIf="shemaNight.get('n44')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n44')">
+            <textPath  xlink:href="#n44">{{shemaNight.get('n44')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 839.11941,2296.8454 h 154.1638 v 241.9787 H 837.16797 Z"
+            *ngIf="shemaNight.get('n36')"
+            fill="white"
+          />
+          <path
+            d="M 874.24534,2509.5525 973.7688,2333.9228"
+            id="n36"
+            fill="white"
+            *ngIf="shemaNight.get('n36')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n36')">
+            <textPath  xlink:href="#n36">{{shemaNight.get('n36')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1028.4091,2298.7969 h 173.6782 v 226.3671 h -175.6296 z"
+            *ngIf="shemaNight.get('n35')"
+            fill="white"
+          />
+          <path
+            d="m 1057.6807,2503.6981 120.9894,-171.7267"
+            id="n35"
+            fill="white"
+            *ngIf="shemaNight.get('n35')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n35')">
+            <textPath  xlink:href="#n35">{{shemaNight.get('n35')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1223.5532,2304.6512 h 173.6782 v 214.6585 h -173.6782 z"
+            *ngIf="shemaNight.get('n34')"
+            fill="white"
+          />
+          <path
+            d="m 1262.582,2497.8438 113.1835,-160.0181"
+            id="n34"
+            fill="white"
+            *ngIf="shemaNight.get('n34')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n34')">
+            <textPath  xlink:href="#n34">{{shemaNight.get('n34')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1576.7639,1871.4314 h 179.5325 v 238.0758 h -177.5811 z"
+            *ngIf="shemaNight.get('n43')"
+            fill="white"
+          />
+          <path
+            d="m 1615.7927,2078.2841 109.2807,-171.7267"
+            id="n43"
+            fill="white"
+            *ngIf="shemaNight.get('n43')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n43')">
+            <textPath  xlink:href="#n43">{{shemaNight.get('n43')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1781.6652,1869.48 h 154.1638 v 247.8329 h -163.921 z"
+            *ngIf="shemaNight.get('n42')"
+            fill="white"
+          />
+          <path
+            d="M 1812.8882,2088.0413 1935.829,1904.6059"
+            id="n42"
+            fill="white"
+            *ngIf="shemaNight.get('n42')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n42')">
+            <textPath  xlink:href="#n42">{{shemaNight.get('n42')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1961.1977,1867.5285 h 146.358 v 249.7844 H 1949.489 Z"
+            *ngIf="shemaNight.get('n41')"
+            fill="white"
+          />
+          <path
+            d="m 1986.5664,2103.6528 99.5235,-202.9498"
+            id="n41"
+            fill="white"
+            *ngIf="shemaNight.get('n41')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n41')">
+            <textPath  xlink:href="#n41">{{shemaNight.get('n41')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1565.0553,2287.0882 h 189.2897 v 226.3671 h -173.6782 z"
+            *ngIf="shemaNight.get('n33')"
+            fill="white"
+          />
+          <path
+            d="m 1607.987,2480.2809 115.1349,-152.2124"
+            id="n33"
+            fill="white"
+            *ngIf="shemaNight.get('n33')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n33')">
+            <textPath  xlink:href="#n33">{{shemaNight.get('n33')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1777.7623,2296.8454 h 161.9695 v 224.4157 h -156.1152 z"
+            *ngIf="shemaNight.get('n32')"
+            fill="white"
+          />
+          <path
+            d="m 1803.131,2501.7467 105.3778,-175.6296"
+            id="n32"
+            fill="white"
+            *ngIf="shemaNight.get('n32')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n32')">
+            <textPath  xlink:href="#n32">{{shemaNight.get('n32')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1959.2462,2298.7969 h 156.1153 v 222.4642 h -160.0181 z"
+            *ngIf="shemaNight.get('n31')"
+            fill="white"
+          />
+          <path
+            d="m 1988.5179,2488.0866 93.6691,-154.1638"
+            id="n31"
+            fill="white"
+            *ngIf="shemaNight.get('n31')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n31')">
+            <textPath  xlink:href="#n31">{{shemaNight.get('n31')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 228.31854,1215.7474 h 269.29878 v 265.3959 H 224.41566 Z"
+            *ngIf="shemaNight.get('nб15')"
+            fill="white"
+          />
+          <path
+            d="M 273.20167,1455.7746 478.10292,1246.9705"
+            id="nб15"
+            fill="white"
+            *ngIf="shemaNight.get('nб15')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб15')">
+            <textPath  xlink:href="#nб15">{{shemaNight.get('nб15')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 524.93749,1217.6989 h 271.25023 v 290.7646 H 522.98605 Z"
+            *ngIf="shemaNight.get('nб16')"
+            fill="white"
+          />
+          <path
+            d="M 563.9663,1475.289 761.06179,1264.5334"
+            id="nб16"
+            fill="white"
+            *ngIf="shemaNight.get('nб16')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб16')">
+            <textPath  xlink:href="#nб16">{{shemaNight.get('nб16')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 224.41566,1512.3664 h 253.68726 v 306.3761 H 224.41566 Z"
+            *ngIf="shemaNight.get('nб14')"
+            fill="white"
+          />
+          <path
+            d="M 255.6387,1791.4224 458.58851,1549.4437"
+            id="nб14"
+            fill="white"
+            *ngIf="shemaNight.get('nб14')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб14')">
+            <textPath  xlink:href="#nб14">{{shemaNight.get('nб14')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 530.79181,1543.5894 H 800.0906 v 261.493 H 522.98605 Z"
+            *ngIf="shemaNight.get('nб17')"
+            fill="white"
+          />
+          <path
+            d="M 558.11198,1771.908 763.01323,1574.8125"
+            id="nб17"
+            fill="white"
+            *ngIf="shemaNight.get('nб17')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nб17')">
+            <textPath  xlink:href="#nб17">{{shemaNight.get('nб17')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 817.65356,1182.5729 h 173.6782 v 249.7844 H 819.605 Z"
+            *ngIf="shemaNight.get('n66')"
+            fill="white"
+          />
+          <path
+            d="M 837.16797,1397.2314 965.96304,1221.6017"
+            id="n66"
+            fill="white"
+            *ngIf="shemaNight.get('n66')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n66')">
+            <textPath  xlink:href="#n66">{{shemaNight.get('n66')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1032.312,1190.3787 h 161.9696 v 234.1729 h -167.8239 z"
+            *ngIf="shemaNight.get('n65')"
+            fill="white"
+          />
+          <path
+            d="m 1063.5351,1408.94 113.1835,-193.1926"
+            id="n65"
+            fill="white"
+            *ngIf="shemaNight.get('n65')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n65')">
+            <textPath  xlink:href="#n65">{{shemaNight.get('n65')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1219.6503,1190.3787 h 181.484 v 234.1729 h -183.4354 z"
+            *ngIf="shemaNight.get('n64')"
+            fill="white"
+          />
+          <path
+            d="M 1243.0676,1397.2314 1377.717,1211.8445"
+            id="n64"
+            fill="white"
+            *ngIf="shemaNight.get('n64')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n64')">
+            <textPath  xlink:href="#n64">{{shemaNight.get('n64')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 831.31365,1611.8898 h 167.82388 v 232.2215 H 829.3622 Z"
+            *ngIf="shemaNight.get('n56')"
+            fill="white"
+          />
+          <path
+            d="M 854.73093,1816.7911 977.67168,1641.1614"
+            id="n56"
+            fill="white"
+            *ngIf="shemaNight.get('n56')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n56')">
+            <textPath  xlink:href="#n56">{{shemaNight.get('n56')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1034.2635,1619.6956 h 173.6782 v 226.3671 H 1032.312 Z"
+            *ngIf="shemaNight.get('n55')"
+            fill="white"
+          />
+          <path
+            d="m 1067.4379,1828.4997 107.3293,-169.7753"
+            id="n55"
+            fill="white"
+            *ngIf="shemaNight.get('n55')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n55')">
+            <textPath  xlink:href="#n55">{{shemaNight.get('n55')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1233.3104,1613.8413 h 169.7753 v 230.27 h -173.6782 z"
+            *ngIf="shemaNight.get('n54')"
+            fill="white"
+          />
+          <path
+            d="m 1262.582,1834.3541 101.4749,-173.6782"
+            id="n54"
+            fill="white"
+            *ngIf="shemaNight.get('n54')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n54')">
+            <textPath  xlink:href="#n54">{{shemaNight.get('n54')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1580.6668,1194.2816 h 167.8239 v 238.0757 h -173.6782 z"
+            *ngIf="shemaNight.get('n63')"
+            fill="white"
+          />
+          <path
+            d="m 1606.0355,1418.6972 113.1836,-197.0955"
+            id="n63"
+            fill="white"
+            *ngIf="shemaNight.get('n63')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n63')">
+            <textPath  xlink:href="#n63">{{shemaNight.get('n63')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1777.7623,1200.1359 h 156.1152 v 230.27 H 1785.568 Z"
+            *ngIf="shemaNight.get('n62')"
+            fill="white"
+          />
+          <path
+            d="m 1805.0824,1414.7943 103.4264,-181.4839"
+            id="n62"
+            fill="white"
+            *ngIf="shemaNight.get('n62')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n62')">
+            <textPath  xlink:href="#n62">{{shemaNight.get('n62')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1963.1491,1194.2816 h 148.3095 v 243.93 h -156.1152 z"
+            *ngIf="shemaNight.get('n61')"
+            fill="white"
+          />
+          <path
+            d="m 1980.7121,1422.6001 105.3778,-202.9498"
+            id="n61"
+            fill="white"
+            *ngIf="shemaNight.get('n61')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n61')">
+            <textPath  xlink:href="#n61">{{shemaNight.get('n61')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1582.6182,1627.5014 h 179.5326 v 228.3185 h -173.6782 z"
+            *ngIf="shemaNight.get('n53')"
+            fill="white"
+          />
+          <path
+            d="m 1613.8413,1840.2084 115.135,-179.5325"
+            id="n53"
+            fill="white"
+            *ngIf="shemaNight.get('n53')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n53')">
+            <textPath  xlink:href="#n53">{{shemaNight.get('n53')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1783.6166,1625.5499 h 169.7753 v 226.3671 h -171.7267 z"
+            *ngIf="shemaNight.get('n52')"
+            fill="white"
+          />
+          <path
+            d="m 1794.8374,1843.6234 139.528,-202.9498"
+            id="n52"
+            fill="white"
+            *ngIf="shemaNight.get('n52')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n52')">
+            <textPath  xlink:href="#n52">{{shemaNight.get('n52')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1976.8092,1621.647 h 132.698 v 247.833 h -148.3095 z"
+            *ngIf="shemaNight.get('n51')"
+            fill="white"
+          />
+          <path
+            d="m 1984.1271,1851.4292 110.7443,-207.3406"
+            id="n51"
+            fill="white"
+            *ngIf="shemaNight.get('n51')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n51')">
+            <textPath  xlink:href="#n51">{{shemaNight.get('n51')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1955.2854,939.6961 h 186.2834 v 230.4394 H 1948.386 Z"
+            *ngIf="shemaNight.get('n71')"
+            fill="white"
+          />
+          <path
+            d="M 1974.6037,1154.9569 2111.2115,981.0924"
+            id="n71"
+            fill="white"
+            *ngIf="shemaNight.get('n71')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n71')">
+            <textPath  xlink:href="#n71">{{shemaNight.get('n71')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1770.3819,934.17659 h 161.4456 v 238.71871 h -161.4456 z"
+            *ngIf="shemaNight.get('n72')"
+            fill="white"
+          />
+          <path
+            d="M 1789.7002,1149.4374 1916.6489,963.15401"
+            id="n72"
+            fill="white"
+            *ngIf="shemaNight.get('n72')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n72')">
+            <textPath  xlink:href="#n72">{{shemaNight.get('n72')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1581.3388,936.93635 h 162.8255 v 245.61805 h -164.2054 z"
+            *ngIf="shemaNight.get('n73')"
+            fill="white"
+          />
+          <path
+            d="M 1607.5565,1161.8563 1724.846,964.53388"
+            id="n73"
+            fill="white"
+            *ngIf="shemaNight.get('n73')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n73')">
+            <textPath  xlink:href="#n73">{{shemaNight.get('n73')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1233.6099,934.17659 h 171.1047 V 1174.2752 H 1221.191 Z"
+            *ngIf="shemaNight.get('n74')"
+            fill="white"
+          />
+          <path
+            d="M 1252.9281,1157.7166 1384.0164,964.53388"
+            id="n74"
+            fill="white"
+            *ngIf="shemaNight.get('n74')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n74')">
+            <textPath  xlink:href="#n74">{{shemaNight.get('n74')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="m 1029.3881,939.6961 c 8.2793,0 168.345,0 168.345,0 v 237.3388 h -171.1048 z"
+            *ngIf="shemaNight.get('n75')"
+            fill="white"
+          />
+          <path
+            d="M 1058.3655,1150.8172 1175.655,974.19302"
+            id="n75"
+            fill="white"
+            *ngIf="shemaNight.get('n75')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n75')">
+            <textPath  xlink:href="#n75">{{shemaNight.get('n75')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 1008.6899,941.07598 H 837.58522 v 220.78032 h 168.34498 z"
+            *ngIf="shemaNight.get('n76')"
+            fill="white"
+          />
+          <path
+            d="M 858.28337,1142.538 982.47228,976.95277"
+            id="n76"
+            fill="white"
+            *ngIf="shemaNight.get('n76')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('n76')">
+            <textPath  xlink:href="#n76">{{shemaNight.get('n76')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 596.10678,637.50308 H 764.45175 V 847.24435 H 586.44764 l 6.89938,-204.22176 z"
+            *ngIf="shemaNight.get('nк1')"
+            fill="white"
+          />
+          <path
+            d="m 614.04518,840.34497 c 0,-8.27926 128.32854,-173.86448 128.32854,-173.86448"
+            id="nк1"
+            fill="white"
+            *ngIf="shemaNight.get('nк1')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nк1')">
+            <textPath  xlink:href="#nк1">{{shemaNight.get('nк1')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 409.82341,636.1232 H 575.40862 V 861.04312 H 400.16427 Z"
+            *ngIf="shemaNight.get('nк2')"
+            fill="white"
+          />
+          <path
+            d="M 431.90144,845.86448 558.8501,659.58111"
+            id="nк2"
+            fill="white"
+            *ngIf="shemaNight.get('nк2')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nк2')">
+            <textPath  xlink:href="#nк2">{{shemaNight.get('nк2')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 216.64066,636.1232 H 379.46612 V 861.04312 H 208.3614 Z"
+            *ngIf="shemaNight.get('nк3')"
+            fill="white"
+          />
+          <path
+            d="M 244.23819,836.20534 362.9076,665.10062"
+            id="nк3"
+            fill="white"
+            *ngIf="shemaNight.get('nк3')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nк3')">
+            <textPath  xlink:href="#nк3">{{shemaNight.get('nк3')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 223.54004,386.3655 H 376.70637 V 619.56468 H 213.8809 Z"
+            *ngIf="shemaNight.get('nк4')"
+            fill="white"
+          />
+          <path
+            d="M 235.95893,603.00616 354.62834,427.76181"
+            id="nк4"
+            fill="white"
+            *ngIf="shemaNight.get('nк4')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nк4')">
+            <textPath  xlink:href="#nк4">{{shemaNight.get('nк4')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 407.06366,382.22587 H 574.02875 V 620.94456 H 408.44353 Z"
+            *ngIf="shemaNight.get('nк5')"
+            fill="white"
+          />
+          <path
+            d="M 429.14168,607.14579 554.71047,418.10267"
+            id="nк5"
+            fill="white"
+            *ngIf="shemaNight.get('nк5')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nк5')">
+            <textPath  xlink:href="#nк5">{{shemaNight.get('nк5')}}</textPath>
+          </text>
+        </g>
+        <g>
+          <path
+            d="M 609.90554,386.3655 H 768.59138 V 619.56468 H 604.38604 Z"
+            *ngIf="shemaNight.get('nк6')"
+            fill="white"
+          />
+          <path
+            d="M 623.70431,594.7269 743.75359,416.72279"
+            id="nк6"
+            fill="white"
+            *ngIf="shemaNight.get('nк6')"
+          />
+          <text style="font-size: 25px;"  *ngIf="shemaNight.get('nк6')">
+            <textPath  xlink:href="#nк6">{{shemaNight.get('nк6')}}</textPath>
+          </text>
+        </g>
+      </svg>
+      <img class="map_img1" src="assets/img/pol.png" alt="pol">
+       <img class="map_img" src="assets/img/pol.png" alt="pol">
+    </div>
+ </section>
+  <section class="list_section" *ngIf="!time">
+    <ul class="list">
+      <li class="item" *ngFor="let night of nights">
+        <h5 class="table text-info">{{night.table}}</h5>
+        <h5 class="user" [ngStyle]="{color: night.color}">{{night.user}}</h5>
+      </li>
+      <img class="item_img" src="assets/img/color.png" alt="img">
+    </ul>
+  </section>
+
+</main>

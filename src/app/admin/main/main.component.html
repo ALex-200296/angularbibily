@@ -1,0 +1,160 @@
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu"
+          ><i class="fas fa-bars"></i
+        ></a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          data-widget="control-sidebar"
+          data-slide="true"
+          href="#"
+          ><i class="fas fa-th-large"></i
+        ></a>
+      </li>
+      <li class="nav-item" *ngIf="auth.isAuthorization()">
+        <button
+          class="nav-link nav_button"
+          (click)="logout()"
+          >
+          <i class="fa fa-window-close" aria-hidden="true"></i>
+          </button>
+      </li>
+    </ul>
+  </nav>
+
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="aside_user_panel">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu"
+              ><i class="fas fa-bars"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul
+          class="nav nav-pills nav-sidebar flex-column"
+          data-widget="treeview"
+          role="menu"
+          data-accordion="false"
+        >
+          <li class="nav-item">
+           <a class="nav-link">
+             <i class="nav-icon fas fa-chart-pie"></i>
+             <p>
+                пользователи
+               <i class="right fas fa-angle-left"></i>
+             </p>
+           </a>
+           <ul class="nav nav-treeview" style="display: none;">
+             <li class="nav-item">
+               <a [routerLink]="['/projectadmin/main/employee/create']" class="nav-link">
+                 <i class="far fa-circle nav-icon"></i>
+                 <p>Создать официанта</p>
+               </a>
+             </li>
+             <li class="nav-item">
+               <a [routerLink]="['/projectadmin/main/manager/create']" class="nav-link">
+                 <i class="far fa-circle nav-icon"></i>
+                 <p>Создать менеджера</p>
+               </a>
+             </li>
+             <li class="nav-item">
+               <a [routerLink]="['/projectadmin/main/users/all']" class="nav-link">
+                 <i class="far fa-circle nav-icon"></i>
+                 <p>Список пользователей</p>
+               </a>
+             </li>
+           </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                рестораны
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a [routerLink]="['/projectadmin/main/tables/all']" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Список столов</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/projectadmin/main/restaurants/all']" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Список ресторанов</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/projectadmin/main/restaurants/create']" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Добавить ресторан</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/projectadmin/main/tables/create']" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>добавить стол</p>
+                </a>
+              </li>
+
+            </ul>
+           </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <router-outlet></router-outlet>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <!-- <footer class="main-footer">
+    <strong
+      >Copyright &copy; 2014-2019
+      <a href="http://adminlte.io">AdminLTE.io</a>.</strong
+    >
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block"><b>Version</b> 3.0.0</div>
+  </footer> -->
+</div>

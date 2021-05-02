@@ -1,0 +1,19 @@
+//aside
+.aside_user_panel {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_button {
+  border: none;
+  background-color: transparent;
+}
+
+@media (max-width: 1000px) {
+  .aside_user_panel {
+    visibility:visible;
+    display: flex;
+    justify-content: center;
+  }
+}

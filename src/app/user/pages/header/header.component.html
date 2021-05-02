@@ -1,0 +1,15 @@
+<header class="header">
+  <nav class="user_header">
+    <ul class="user_list">
+      <li class="nav-item" *ngIf="auth.isAuthorization()">
+        <button
+          class="nav-link nav_button"
+          (click)="logout()"
+          >
+          Выйти
+          <i class="fa fa-window-close" aria-hidden="true"></i>
+          </button>
+      </li>
+    </ul>
+  </nav>
+</header>

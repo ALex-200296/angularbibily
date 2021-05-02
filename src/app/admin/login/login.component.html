@@ -1,0 +1,14 @@
+<section class="section_login">
+  <h1>Sign In</h1>
+<div id="wrapper">
+	<form id="signin" [formGroup]="form" (submit)="submit()">
+		<input type="text" placeholder="login" formControlName="login" />
+		<input type="password" placeholder="password" formControlName="password" />
+		<button type="submit">&#xf0da;</button>
+		<!-- <p>forgot your password? <a href="#">click here</a></p> -->
+	</form>
+  <div *ngIf="error">
+    <p class="error_text">Ошибка попробуйте снова</p>
+  </div>
+</div>
+</section>

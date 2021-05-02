@@ -1,0 +1,13 @@
+<div class="shema_form_group">
+  <select class="form-control" [(ngModel)]="name" required>
+    <option *ngFor="let user of usersAll" value="{{user.id}}">{{user.name}}</option>
+  </select>
+  <div class="group_btn">
+    <button class="btn bg-success" [disabled]="table.exists || bol" (click)="add()">
+      Добавить
+    </button>
+    <button class="btn bg-primary" (click)="update()" [disabled]="!table.exists && !bol">
+      Редактировать
+    </button>
+  </div>
+</div>

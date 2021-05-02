@@ -1,0 +1,119 @@
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu"
+          ><i class="fas fa-bars"></i
+        ></a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          data-widget="control-sidebar"
+          data-slide="true"
+          href="#"
+          ><i class="fas fa-th-large"></i
+        ></a>
+      </li>
+      <li class="nav-item" *ngIf="auth.isAuthorization()">
+        <button
+          class="nav-link nav_button"
+          (click)="logout()"
+          >
+          <i class="fa fa-window-close" aria-hidden="true"></i>
+          </button>
+      </li>
+    </ul>
+  </nav>
+
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="aside_user_panel">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu"
+              ><i class="fas fa-bars"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul
+          class="nav nav-pills nav-sidebar flex-column"
+          data-widget="treeview"
+          role="menu"
+          data-accordion="false"
+        >
+          <li class="nav-item">
+           <a class="nav-link" [routerLink]="['/manager/calendar']">
+             <i class="nav-icon fas fa-chart-pie"></i>
+             <p>
+                Создать поляну
+             </p>
+           </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['users/all']" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Официанты
+              </p>
+            </a>
+           </li>
+           <li class="nav-item">
+            <a [routerLink]="['user/create']" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Добавить официанта
+              </p>
+            </a>
+           </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <router-outlet></router-outlet>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <!-- <footer class="main-footer">
+    <strong
+      >Copyright &copy; 2014-2019
+      <a href="http://adminlte.io">AdminLTE.io</a>.</strong
+    >
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block"><b>Version</b> 3.0.0</div>
+  </footer> -->
+</div>

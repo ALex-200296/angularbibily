@@ -1,0 +1,31 @@
+.shema_wrap {
+  padding: 1rem 1rem;
+  background: rgb(150,209,160);
+  background: linear-gradient(90deg, rgba(150,209,160,1) 17%, rgba(243,229,255,1) 100%);
+}
+
+.btn:not(:first-child) {
+  margin-left: 5px;
+}
+
+.shema_item {
+  padding: 0.3rem 1rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-bottom: 1px solid black;
+}
+
+.shema_title {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .shema_title {
+    text-align: center;
+  }
+
+  .shema_item {
+    grid-template-columns: 1fr;
+  }
+}

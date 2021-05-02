@@ -1,0 +1,21 @@
+<section class="section">
+  <div class="container">
+    <section id="content">
+      <form [formGroup]="form" (submit)="login()">
+        <h1>Login Form</h1>
+        <div>
+          <input type="text" placeholder="login" formControlName="login" required="" id="username">
+        </div>
+        <div>
+          <input type="password" placeholder="Password" formControlName="password" required="" id="password">
+        </div>
+        <div>
+          <button>
+            <input type="submit" value="Log in">
+          </button>
+        </div>
+      </form><!-- form -->
+
+    </section><!-- content -->
+  </div>
+</section>

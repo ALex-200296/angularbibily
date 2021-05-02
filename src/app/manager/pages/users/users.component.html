@@ -1,0 +1,13 @@
+<section class="users">
+  <h1>СПИСОК ОФИЦИАНТОВ</h1>
+  <ul class="users_list">
+    <li class="users_item" *ngFor="let user of users; index as i">
+        <span class="text"><i class="fa fa-user" aria-hidden="true"></i></span>
+        <div class="text_group">
+          <h2 class="text">{{user.name}}</h2>
+          <h2 class="text">Логин: {{user.login}}</h2>
+        </div>
+        <button class="btn bg-danger btn_danger" (click)="delete(user.id)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+    </li>
+  </ul>
+</section>
