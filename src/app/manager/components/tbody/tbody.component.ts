@@ -19,7 +19,7 @@ export class TbodyComponent implements OnInit {
   users!: IManagerUsers[];
   date!: string;
   time_of_day!: string;
-  bol: boolean = false;
+  loading_btn: boolean = false;
   constructor
   (
     private route: ActivatedRoute,
@@ -38,52 +38,28 @@ export class TbodyComponent implements OnInit {
       )
   }
 
-  add() {
-    if(!this.name) {
-      return
-    }
-    const data: IResUsTab = {
-      user_id: +this.name,
-      date: this.date,
-      table_id: this.table.id,
-      time_of_day: this.time_of_day,
-    }
-    this.bol = true;
-    this.managerService.resUsTabCreate(data)
-      .subscribe
-      (
-        response =>
-        {
-
-        },
-        error =>
-        {
-
-        }
-      )
-  }
-
   update() {
     if(!this.name) {
       return
     }
-
+    this.loading_btn = true;
     const data: IResUsTab = {
       user_id: +this.name,
       date: this.date,
       table_id: this.table.id,
       time_of_day: this.time_of_day,
     }
-
     this.managerService.resUsTabUpdate(data)
       .subscribe
       (
         response =>
         {
-          console.log(response)
+          this.name = '';
+          this.loading_btn = false;
         },
         error =>
         {
+          this.loading_btn = false;
           console.log(error)
         }
       )

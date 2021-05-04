@@ -1,0 +1,18 @@
+<div
+  id="nav"
+  [ngClass]="{
+    'navigation': true,
+    'active': nav_bol
+  }">
+  <div class="navigation__inner">
+    <ul class="nav_list">
+      <li class="nav_item">
+        <a [routerLink]="['/login']" class="nav_link">
+          Личный
+          <i class="fa fa-user" aria-hidden="true"></i>
+          кабинет
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

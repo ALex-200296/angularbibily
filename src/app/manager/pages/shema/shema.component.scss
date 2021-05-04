@@ -1,7 +1,13 @@
+.shema_add {
+  padding: 2rem 1rem;
+}
+
 .shema_wrap {
-  padding: 1rem 1rem;
+  margin: 0 1rem;
+  padding: 1rem 0;
   background: rgb(150,209,160);
   background: linear-gradient(90deg, rgba(150,209,160,1) 17%, rgba(243,229,255,1) 100%);
+  border-radius: 10px;
 }
 
 .btn:not(:first-child) {
@@ -15,7 +21,37 @@
   border-bottom: 1px solid black;
 }
 
+.multi_title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .shema_title {
+  text-align: center;
+}
+
+.btn_add {
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.shema_add_btn {
+  width: 100%;
+}
+
+.search_group {
+  padding: 2rem 1rem;
+}
+
+.input_search {
+  -webkit-box-shadow: 0px 0px 21px 20px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 21px 20px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 21px 20px rgba(34, 60, 80, 0.2);
+}
+
+.title_emplty {
   text-align: center;
 }
 

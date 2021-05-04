@@ -19,16 +19,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if(this.auth.isAuthorization()) {
-      if(localStorage.getItem('position') === 'admin') {
-        this.router.navigate(['projectadmin/main']);
-      }
-      if(localStorage.getItem('position') === 'manager') {
-        this.router.navigate(['manager']);
-      }
-      if(localStorage.getItem('position') === 'employee') {
-        this.router.navigate(['user'])
-      }
-    }
+
   }
 }

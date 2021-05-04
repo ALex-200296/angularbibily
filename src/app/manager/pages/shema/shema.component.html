@@ -1,16 +1,64 @@
 <section class="shema">
-  <h1 class="shema_title">Поляна</h1>
+  <h3 class="shema_title">Добавить</h3>
+  <div class="shema_add">
+    <div>
+      <h4 class="multi_title">Выбрать официанта</h4>
+      <ng-select [items]="users"
+        bindLabel="name"
+        bindValue="id"
+        dropdownPosition="bottom"
+        [(ngModel)]="user_id"
+        class="multi_input"
+        [disabled]="input_boolean_add"
+        >
+      </ng-select>
+      <div class="error" *ngIf="error_user">
+        <p style="color: red; margin-top: 1rem;">{{error_user}}</p>
+      </div>
+    </div>
+    <div>
+      <h4 class="multi_title">Выбрать столы</h4>
+      <ng-select
+      [multiple]="true"
+      dropdownPosition="bottom"
+      [closeOnSelect]="false"
+      [(ngModel)]="arr_tables"
+      [clearable]="false"
+      class="multi_input"
+      [disabled]="input_boolean_add"
+      >
+        <ng-option *ngFor="let table of tables" [value]="table.id">{{table.name}}</ng-option>
+        <ng-option [value]="'custom'">Custom</ng-option>
+      </ng-select>
+      <div class="error" *ngIf="error_table">
+        <p style="color: red; margin-top: 1rem;">{{error_table}}</p>
+      </div>
+    </div>
+    <div class="btn_add">
+      <button class="shema_add_btn btn btn-primary" *ngIf="!btn_boolean_add; else btn_loader" (click)="add()">Добавить</button>
+      <ng-template #btn_loader>
+        <app-loading></app-loading>
+      </ng-template>
+    </div>
+  </div>
+  <h3 class="shema_title">Редактировать</h3>
+  <div class="input-group search_group">
+    <input type="search" class="form-control form-control-lg input_search" placeholder="Поиск стола" [(ngModel)]="search">
+  </div>
   <div class="shema_wrap">
-    <ul class="shema_list">
-      <li  *ngFor="let table of tables" class="shema_item">
+    <ul class="shema_list" *ngIf="list_tables.length !== 0; else empty">
+      <li  *ngFor="let table of list_tables | list_filter:search" class="shema_item">
         <h1 class="shema_title">
           {{table.name}}
-          <span style="display: block; font-size: 14px; color: red;" *ngIf="table.exists">
+          <span style="display: block; font-size: 14px; color: red;">
             Официант был добавлен ранее
           </span>
         </h1>
         <app-tbody [usersAll]="users" [table]="table"></app-tbody>
       </li>
     </ul>
+    <ng-template #empty>
+      <h2 class="title_emplty">На данный момент пусто</h2>
+    </ng-template>
   </div>
 </section>

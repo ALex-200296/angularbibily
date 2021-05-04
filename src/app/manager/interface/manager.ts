@@ -27,7 +27,7 @@ export interface IResUsTab {
   user_id: number,
   date: string,
   restaurant_id?: number,
-  table_id: number,
+  table_id: number | number[],
   time_of_day: string,
 }
 

@@ -9,6 +9,8 @@ import { ManagerService } from './manager.service';
 import { LoginComponent } from '../components/login/login.component';
 import { ManagerGuard } from './manager.guard';
 import { AdminService } from '../admin/admin.service';
+import { NgSelectModule } from '@ng-select/ng-select';
+
 import { CalendarComponent } from './pages/calendar/calendar.component';
 import { ShemaComponent } from './pages/shema/shema.component';
 import { TbodyComponent } from './components/tbody/tbody.component';
@@ -16,6 +18,9 @@ import { UsersComponent } from './pages/users/users.component';
 import { UsersCreateComponent } from './pages/users-create/users-create.component';
 import { UsersUpdateComponent } from './pages/users-update/users-update.component';
 import { UsersDeleteComponent } from './pages/users-delete/users-delete.component';
+import { LoadingComponent } from '../components/loading/loading.component';
+import { listFilter } from './pipe/tables_filter.pipe';
+import { UserFilter } from './pipe/user_filter';
 
 const INTERCEPTOR_PROVIDER: Provider = {
   provide: HTTP_INTERCEPTORS,
@@ -33,6 +38,9 @@ const INTERCEPTOR_PROVIDER: Provider = {
     UsersCreateComponent,
     UsersUpdateComponent,
     UsersDeleteComponent,
+    listFilter,
+    UserFilter,
+    LoadingComponent
   ],
   imports: [
     CommonModule,
@@ -40,6 +48,7 @@ const INTERCEPTOR_PROVIDER: Provider = {
     FormsModule,
     ManagerRoutingModule,
     HttpClientModule,
+    NgSelectModule,
   ],
   providers: [
     INTERCEPTOR_PROVIDER,

@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  bol_menu: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggle() {
+    this.bol_menu = !this.bol_menu;
+  }
 }

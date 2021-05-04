@@ -29,13 +29,15 @@ export class MainComponent implements OnInit {
     }else {
       this.time = false;
     }
-    const month =  ("0" + (date1.getMonth()+1)).slice(-2)
-    const date = `${date1.getFullYear()}-${month}-${date1.getDate()}`;
+    const month =  ("0" + (date1.getMonth()+1)).slice(-2);
+    const getDate =  ("0" + (date1.getDate())).slice(-2);
+    const date = `${date1.getFullYear()}-${month}-${getDate}`;
     this.userService.shemaUser({date: date})
       .subscribe
       (
         (response: any)=>
         {
+
           response.data.forEach(( element: any ) => {
             if(element.time_of_day === 'day') {
               this.days.push(element);
@@ -47,7 +49,7 @@ export class MainComponent implements OnInit {
             }
           });
           this.shemas = response.data;
-          console.log(this.shemaNight)
+
         },
         error =>
         {

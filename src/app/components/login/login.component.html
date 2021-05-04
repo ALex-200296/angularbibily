@@ -1,6 +1,9 @@
 <section class="section">
   <div class="container">
     <section id="content">
+        <a [routerLink]="['/']" class="arrow_left">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </a>
       <form [formGroup]="form" (submit)="login()">
         <h1>Login Form</h1>
         <div>

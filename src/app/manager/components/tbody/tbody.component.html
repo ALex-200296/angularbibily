@@ -3,11 +3,11 @@
     <option *ngFor="let user of usersAll" value="{{user.id}}">{{user.name}}</option>
   </select>
   <div class="group_btn">
-    <button class="btn bg-success" [disabled]="table.exists || bol" (click)="add()">
-      Добавить
-    </button>
-    <button class="btn bg-primary" (click)="update()" [disabled]="!table.exists && !bol">
+    <button class="btn bg-primary tbody_btn" *ngIf="!loading_btn; else loader" (click)="update()">
       Редактировать
     </button>
+    <ng-template #loader>
+      <app-loading></app-loading>
+    </ng-template>
   </div>
 </div>

@@ -13,6 +13,7 @@
       <div class="form-group">
         <label for="exampleInputEmail1">Логин</label>
         <input  formControlName="login" type="text" class="form-control" placeholder="Логин">
+        <small *ngIf="error_login" class="text_login">{{error_login}}</small>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Пароль</label>
@@ -25,7 +26,10 @@
     </div>
     <!-- /.card-body -->
     <div class="card-footer">
-      <button type="submit" class="btn btn-primary" (click)="create()">Добавить</button>
+      <button type="submit" class="btn btn-primary" *ngIf="!loading; else loader" (click)="create()">Добавить</button>
+      <ng-template #loader>
+        <app-loading></app-loading>
+      </ng-template>
     </div>
   </form>
 </div>

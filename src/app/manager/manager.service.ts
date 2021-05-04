@@ -21,6 +21,7 @@ export class ManagerService {
   }
 
   userCreate(data: IManagerUsers) {
+    data.login.trim().toLocaleLowerCase();
     return this.http.post(`${this.url}manager/user/create`, data);
   }
 

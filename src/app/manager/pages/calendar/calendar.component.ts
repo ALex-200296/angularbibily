@@ -10,11 +10,13 @@ import { Router } from '@angular/router';
 export class CalendarComponent implements OnInit {
   errors!: string;
 
-  day: boolean = true;
   form: FormGroup = new FormGroup({
     date: new FormControl('', [
       Validators.required
     ]),
+    day: new FormControl('', [
+      Validators.required
+    ])
   })
   constructor
   (
@@ -29,7 +31,6 @@ export class CalendarComponent implements OnInit {
    const dateNow = `${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`;
    const dateNowParse = Date.parse(dateNow);
    const dateCreateParse = Date.parse(this.form.value.date);
-   const day: string = this.day === true ? 'day' : 'night';
     if(this.form.invalid) {
       return
     }
@@ -39,7 +40,7 @@ export class CalendarComponent implements OnInit {
       return
     }
 
-    this.router.navigate([`manager/shema/${this.form.value.date}/${day}`])
+    this.router.navigate([`manager/shema/${this.form.value.date}/${this.form.value.day}`])
   }
 
 }

@@ -22,6 +22,8 @@ import { UserService } from './user/user.service';
 import { UserGuard } from './user/user.guard';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { LoadingComponent } from './components/loading/loading.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 const INTERCEPTOR_PROVIDER: Provider = {
@@ -41,7 +43,8 @@ const INTERCEPTOR_PROVIDER: Provider = {
     NotfoundComponent,
     MainComponent,
     LoginComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,7 @@ const INTERCEPTOR_PROVIDER: Provider = {
       registrationStrategy: 'registerImmediately'
       // registerWhenStable:30000
       // registerImmediately
-    })
+    }),
   ],
   providers: [
     ManagerService,

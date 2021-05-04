@@ -13,7 +13,8 @@ a:active {
   padding: 1.5rem 1rem;
   z-index: 2;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(56,107,130,1) 31%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,21 +30,25 @@ a:active {
   margin-right: 10px;
 }
 
-@media (max-width: 500px) {
-  .nav_list {
-    margin-top: 10px;
-    flex-wrap: wrap;
-    width: 100%;
-  }
+.btn_burger {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+}
 
-  .header {
-    flex-direction: column;
-  }
-  .nav_item:not(:last-child) {
-    margin-bottom: 5px;
-  }
+.btn_burger:hover,
+.btn_burger:active,
+.btn_burger:focus {
+ color: var(--color-green);
+}
 
+@media (max-width: 768px) {
   .nav {
-    width: 100%;
+    display: none;
+  }
+  .btn_burger {
+    display: block;
   }
 }
+

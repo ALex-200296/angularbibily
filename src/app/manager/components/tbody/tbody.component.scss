@@ -35,5 +35,11 @@ select {
     margin-left: 0;
     width: 100%;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tbody_btn {
+    width: 100%;
   }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { IManagerUsers } from '../../interface/manager';
 import { ManagerService } from '../../manager.service';
 
 @Component({
@@ -10,6 +11,10 @@ import { ManagerService } from '../../manager.service';
 export class UsersCreateComponent implements OnInit {
 
   color: string = 'black';
+  loading:boolean = false;
+  error_login: string = '';
+  check_boolean: boolean = false;
+
   form: FormGroup = new FormGroup({
     name: new FormControl('', [
       Validators.required
@@ -29,23 +34,53 @@ export class UsersCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   create() {
-    const data = {...this.form.value, color: this.color};
-    console.log(data)
     if(this.form.invalid) {
       return
     }
+    const data_create: IManagerUsers = {
+      ...this.form.value,
+      login: this.form.value.login.trim().toLowerCase(),
+      color: this.color};
 
-    this.managerService.userCreate(data)
+    this.loading = true;
+
+    this.managerService.users()
       .subscribe
       (
-        response =>
+        (response: any) =>
         {
-          console.log(response)
+          const data = response.data.find( (user: any) =>
+          {
+            return user.login === this.form.value.login.trim().toLowerCase();
+          })
+          if(!data) {
+            this.managerService.userCreate(data_create)
+              .subscribe
+              (
+                response =>
+                {
+                  this.form.reset();
+                  this.error_login = '';
+                  this.loading = false;
+                },
+                error =>
+                {
+                  this.loading = false;
+                  console.log(error)
+                }
+              )
+          }
+          if(data) {
+            this.loading = false;
+            this.form.reset();
+            this.error_login = 'Логин занят, попробуйте снова'
+          }
         },
         error =>
         {
-          console.log(error)
+          this.loading = false;
         }
       )
   }
