@@ -1,4 +1,23 @@
 <app-header (toggle)="toggle()"></app-header>
+<app-menu [nav_bol]="bol_menu" (toggleFal)="toggleFal($event)"></app-menu>
 <main class="main">
-  <app-menu [nav_bol]="bol_menu"></app-menu>
+  <section class="section_header">
+    <div class="container container_header">
+        <div class="header_wrap">
+          <h1 class="header_title">
+            Bibily
+          </h1>
+          <p class="header_text">
+            Обновления:
+          </p>
+          <ul class="header_list">
+            <li class="header_item">
+              <p>
+                Создание и просмотр схемы
+              </p>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </section>
 </main>

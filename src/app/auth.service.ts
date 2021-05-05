@@ -25,4 +25,8 @@ export class AuthService {
     localStorage.removeItem('position');
   }
 
+  position() {
+    return localStorage.getItem('position');
+  }
+
 }

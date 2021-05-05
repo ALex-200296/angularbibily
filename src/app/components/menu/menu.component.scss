@@ -17,6 +17,15 @@ a:active {
   align-items: center;
 }
 
+.btn_close {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: transparent;
+  border: none;
+  color: var(--color-white);
+}
+
 $elastic: (
   position: left,
   width: 250,

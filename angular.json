@@ -37,9 +37,9 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss",
               "node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css",
-              "node_modules/admin-lte/docs_html/assets/css/adminlte.css"
+              "node_modules/admin-lte/docs_html/assets/css/adminlte.css",
+              "src/styles.scss"
             ],
             "scripts": [
               "node_modules/admin-lte/plugins/jquery/jquery.js",

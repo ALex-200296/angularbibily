@@ -17,13 +17,13 @@ export class MainComponent implements OnInit {
   shemaNight = new Map();
   constructor
   (
-    private userService: UserService
+    private userService: UserService,
   ) { }
 
   ngOnInit(): void {
     const date1 = new Date();
-    const time = date1.getHours();
-    // const time = 16;
+    // const time = date1.getHours();
+    const time = 16;
     if(5 < time && time < 16 ) {
       this.time = true;
     }else {

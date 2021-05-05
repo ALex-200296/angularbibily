@@ -16,4 +16,7 @@ export class MainComponent implements OnInit {
   toggle() {
     this.bol_menu = !this.bol_menu;
   }
+  toggleFal(value: any) {
+    this.bol_menu = false;
+  }
 }

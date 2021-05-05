@@ -9,6 +9,7 @@ import { UserGuard } from './user.guard';
 import { AuthInterceptor } from '../auth.interceptor';
 import { UserService } from './user.service';
 import { HeaderComponent } from './pages/header/header.component';
+import { OpacityDirective } from './directives/opacity.directive';
 
 const INTERCEPTOR_PROVIDER: Provider = {
   provide: HTTP_INTERCEPTORS,
@@ -20,6 +21,7 @@ const INTERCEPTOR_PROVIDER: Provider = {
   declarations: [
     MainComponent,
     HeaderComponent,
+    OpacityDirective,
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
 
 
 @Component({
@@ -9,9 +10,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   @Input() nav_bol!: boolean;
+  @Output() toggleFal = new EventEmitter<boolean>();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggle() {
+    // this.nav_bol = false;
+
+    this.toggleFal.emit(false);
   }
 
 }

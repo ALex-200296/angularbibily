@@ -40,7 +40,7 @@ const INTERCEPTOR_PROVIDER: Provider = {
     UsersDeleteComponent,
     listFilter,
     UserFilter,
-    LoadingComponent
+    LoadingComponent,
   ],
   imports: [
     CommonModule,
