@@ -108,13 +108,19 @@
         <li class="aside_control_item">
           <a class="aside_control_link" [routerLink]="['/']">
             <i class="fa fa-home" aria-hidden="true"></i>
-            Домой
+            <small class="text_small aside_small">Домой</small>
           </a>
         </li>
         <li class="aside_control_item">
           <a class="aside_control_link" [routerLink]="['/user/']">
             <i class="nav-icon far fa-image"></i>
-            Схема
+            <small class="text_small aside_small">Схема</small>
+          </a>
+        </li>
+        <li class="aside_control_item">
+          <a class="aside_control_link" [routerLink]="['user/proisvol']">
+            <i class="nav-icon far fa-image"></i>
+            <small class="text_small aside_small">Произвольная схема</small>
           </a>
         </li>
       </ul>

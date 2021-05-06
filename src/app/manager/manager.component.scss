@@ -15,6 +15,14 @@
   align-items: center;
 }
 
+.aside_control_item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.aside_small {
+  margin-left: 5px;
+}
+
 @media (max-width: 1000px) {
   .aside_user_panel {
     visibility:visible;

@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { IShema } from '../../interface/user';
 import { UserService } from '../../user.service';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  selector: 'app-shema-proisvol',
+  templateUrl: './shema-proisvol.component.html',
+  styleUrls: ['./shema-proisvol.component.scss']
 })
-export class MainComponent implements OnInit {
+export class ShemaProisvolComponent implements OnInit {
 
   shemas!: IShema[];
   days:any = [];
@@ -15,24 +16,31 @@ export class MainComponent implements OnInit {
   time: boolean = true;
   shemaDays = new Map();
   shemaNight = new Map();
+  time_of_day!: string;
+  date!: string;
   constructor
   (
     private userService: UserService,
+    private route: ActivatedRoute
   ) { }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+    await this.route.params.subscribe( (route: any) => {
+      this.date = route.date;
+      this.time_of_day = route.time_of_day;
+    })
+
+
     const date1 = new Date();
     const time = date1.getHours();
     // const time = 12;
-    if(5 < time && time < 15 ) {
+    if(this.time_of_day === 'day') {
       this.time = true;
     }else {
       this.time = false;
     }
-    const month =  ("0" + (date1.getMonth()+1)).slice(-2);
-    const getDate =  ("0" + (date1.getDate())).slice(-2);
-    const date = `${date1.getFullYear()}-${month}-${getDate}`;
-    this.userService.shemaUser({date: date})
+
+    this.userService.shemaUser({date: this.date})
       .subscribe
       (
         (response: any)=>

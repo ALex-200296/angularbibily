@@ -21,6 +21,7 @@ import { UsersDeleteComponent } from './pages/users-delete/users-delete.componen
 import { LoadingComponent } from '../components/loading/loading.component';
 import { listFilter } from './pipe/tables_filter.pipe';
 import { UserFilter } from './pipe/user_filter';
+import { ShemaProisvolComponent } from './pages/shema-proisvol/shema-proisvol.component';
 
 const INTERCEPTOR_PROVIDER: Provider = {
   provide: HTTP_INTERCEPTORS,
@@ -41,6 +42,7 @@ const INTERCEPTOR_PROVIDER: Provider = {
     listFilter,
     UserFilter,
     LoadingComponent,
+    ShemaProisvolComponent,
   ],
   imports: [
     CommonModule,

@@ -10,6 +10,7 @@ import { AuthInterceptor } from '../auth.interceptor';
 import { UserService } from './user.service';
 import { HeaderComponent } from './pages/header/header.component';
 import { OpacityDirective } from './directives/opacity.directive';
+import { ShemaProisvolComponent } from './pages/shema-proisvol/shema-proisvol.component';
 
 const INTERCEPTOR_PROVIDER: Provider = {
   provide: HTTP_INTERCEPTORS,
@@ -22,6 +23,7 @@ const INTERCEPTOR_PROVIDER: Provider = {
     MainComponent,
     HeaderComponent,
     OpacityDirective,
+    ShemaProisvolComponent,
   ],
   imports: [
     CommonModule,
